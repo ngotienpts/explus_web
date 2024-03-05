@@ -1,0 +1,124 @@
+@media (max-width: 80em) {
+  .d-xl-none {
+    display: none;
+  }
+
+  .d-xl-block {
+    display: block;
+  }
+
+  .d-xl-flex {
+    display: flex;
+  }
+
+  .d-xl-grid {
+    display: grid;
+  }
+
+  /*------------------------------------------------------------- header*/
+  /*------------------------------------------------------------- index*/
+}
+@media (max-width: 64em) {
+  .d-lg-none {
+    display: none;
+  }
+
+  .d-lg-block {
+    display: block;
+  }
+
+  .d-lg-flex {
+    display: flex;
+  }
+
+  .d-lg-grid {
+    display: grid;
+  }
+
+  /*------------------------------------------------------------- header*/
+  .header {
+    padding: 16px 20px;
+  }
+  .header-mb__centerLogo {
+    transition: all 0.2s ease-in-out;
+    height: 80px;
+  }
+  .header.sticky {
+    padding: 10px 20px;
+  }
+  .header.sticky .header-mb__centerLogo {
+    height: 50px;
+  }
+
+  /*------------------------------------------------------------- index*/
+}
+@media (max-width: 48em) {
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+
+  .d-md-flex {
+    display: flex;
+  }
+
+  .d-md-grid {
+    display: grid;
+  }
+
+  /*------------------------------------------------------------- header*/
+  /*------------------------------------------------------------- index*/
+  .heading-primary {
+    font-size: 48px;
+  }
+}
+@media (max-width: 40em) {
+  .d-sm-none {
+    display: none;
+  }
+
+  .d-sm-block {
+    display: block;
+  }
+
+  .d-sm-flex {
+    display: flex;
+  }
+
+  .d-sm-grid {
+    display: grid;
+  }
+
+  /*------------------------------------------------------------- header*/
+  .header.sticky .header-mb__centerLogo {
+    height: 40px;
+  }
+
+  .header-mb__centerLogo {
+    height: 64px;
+  }
+
+  /*------------------------------------------------------------- index*/
+  .heading-primary {
+    font-size: 32px;
+  }
+}
+@media (max-width: 25em) {
+  /*------------------------------------------------------------- header*/
+  /*------------------------------------------------------------- index*/
+  /*------------------------------------------------------------- cate*/
+  /*------------------------------------------------------------- detail*/
+  /*------------------------------------------------------------- footer*/
+}
+@media (max-width: 20em) {
+  /*------------------------------------------------------------- header*/
+  /*------------------------------------------------------------- index*/
+  /*------------------------------------------------------------- cate*/
+  /*------------------------------------------------------------- detail*/
+  /*------------------------------------------------------------- footer*/
+}
+
+/*# sourceMappingURL=responsive.css.map */
