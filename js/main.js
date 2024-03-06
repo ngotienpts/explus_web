@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // slide
     var threeSlides = document.querySelectorAll(".js__swiperThreeContainer");
 
+    // active
+    var activeScrolls = document.querySelectorAll(".js__activeContainer");
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
@@ -33,6 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
                         menu.classList.remove("active");
                         bodyEle.classList.remove("overflow-hidden");
                     };
+                });
+            }
+
+            // active
+            if (activeScrolls) {
+                activeScrolls.forEach((activeScroll) => {
+                    var elementList =
+                        activeScroll.querySelectorAll(".js__activeElement");
+                    elementList.forEach((ele) => {
+                        ele.onclick = function () {
+                            activeScroll
+                                .querySelector(".active.js__activeElement")
+                                .classList.remove("active");
+                            ele.classList.add("active");
+                        };
+                    });
                 });
             }
         },

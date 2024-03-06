@@ -1,4 +1,12 @@
 @media (max-width: 1600px) {
+    .section-tertiary {
+        .row-primary {
+            max-width: 100%;
+            .img {
+                width: 60%;
+            }
+        }
+    }
 }
 @media (max-width: 1366px) {
 }
@@ -40,16 +48,59 @@
         padding: 16px 20px;
         &-mb__centerLogo {
             transition: all 0.2s ease-in-out;
-            height: 80px;
+            height: 50px;
         }
         &.sticky {
             padding: 10px 20px;
             .header-mb__centerLogo {
-                height: 50px;
+                height: 40px;
             }
         }
     }
     /*------------------------------------------------------------- index*/
+    .section-primary,
+    .section-secondary,
+    .section-tertiary {
+        padding-left: 80px;
+        padding-right: 80px;
+
+        .title-primary {
+            font-size: 40px;
+        }
+    }
+    .section-secondary {
+        &__text {
+            bottom: 0px;
+            right: 20px;
+        }
+    }
+    .section-tertiary {
+        &-container .title-primary {
+            margin-bottom: 60px;
+        }
+        .row-primary,
+        .row-secondary {
+            flex-direction: column;
+            gap: 40px;
+        }
+        .row-primary {
+            .img {
+                width: 100%;
+            }
+        }
+        .row-secondary {
+            margin-top: 80px;
+            .text {
+                order: 1;
+            }
+            .img {
+                order: 2;
+            }
+        }
+    }
+    .row-partner {
+        gap: 40px 20px;
+    }
 }
 
 // max width 768px
@@ -68,8 +119,12 @@
     }
     /*------------------------------------------------------------- header*/
     /*------------------------------------------------------------- index*/
-    .heading-primary {
-        font-size: 48px;
+
+    .section-primary,
+    .section-secondary,
+    .section-tertiary {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -88,17 +143,75 @@
         display: grid;
     }
     /*------------------------------------------------------------- header*/
+    .header {
+        padding: 10px 0;
+        &.sticky {
+            padding: 10px 0;
+        }
+    }
     .header.sticky .header-mb__centerLogo {
-        height: 40px;
+        height: 30px;
     }
     .header-mb {
         &__centerLogo {
-            height: 64px;
+            height: 40px;
         }
     }
     /*------------------------------------------------------------- index*/
-    .heading-primary {
-        font-size: 32px;
+
+    .section-primary,
+    .section-secondary,
+    .section-tertiary {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-secondary__text {
+        right: 46px;
+        bottom: -18px;
+    }
+    .section-primary {
+        padding-top: 120px;
+        padding-bottom: 40px;
+        &-container .img-primary {
+            padding: 0;
+        }
+        .title-secondary {
+            font-size: 18px;
+        }
+    }
+    .section-secondary {
+        padding-top: 80px;
+        padding-bottom: 40px;
+
+        .swiper-wrapper {
+            padding-bottom: 20px;
+        }
+    }
+    .section-tertiary {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        &-container .title-primary {
+            margin-bottom: 40px;
+        }
+        .row-secondary {
+            margin-top: 40px;
+        }
+        .text {
+            font-size: 18px;
+        }
+    }
+    .section-primary .title-primary,
+    .section-secondary .title-primary,
+    .section-tertiary .title-primary {
+        font-size: 26px;
+    }
+    .list-disc {
+        font-size: 18px;
+    }
+    .row-partner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
     }
 }
 

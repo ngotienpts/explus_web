@@ -64,3 +64,13 @@
         gap: 100px;
     }
 }
+
+.row-partner {
+    flex-wrap: wrap;
+    gap: 60px 40px;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        flex-shrink: 0;
+    }
+}

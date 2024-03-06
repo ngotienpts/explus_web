@@ -14,6 +14,16 @@
     }
 
     &-mb {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 1000;
+        transition: background 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+        background-color: rgba(0, 0, 0, 0.9);
+
         &__leftIcon {
             padding: 10px;
             margin-left: -10px;
@@ -26,10 +36,10 @@
             padding: 10px;
         }
         &__left {
-            width: 70px;
+            width: 75px;
         }
         &__right {
-            width: 70px;
+            width: 75px;
         }
         &__rightIcon {
             justify-content: flex-end;
@@ -72,6 +82,7 @@
     padding-left: 100px;
     padding-right: 45px;
     &-link {
+        color: #ababab;
         &.active {
             color: #fff;
         }
@@ -88,10 +99,10 @@
     right: 0;
     bottom: 0;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: auto;
+    background-color: rgba(0, 0, 0, 0.72);
+    width: 50%;
     color: #fff;
-    padding: 30px;
+    padding: 20px;
     opacity: 0;
     visibility: hidden;
     display: none;
@@ -100,6 +111,8 @@
         opacity: 1;
         visibility: visible;
         display: block;
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
     }
     &__heading {
         padding-bottom: 20px;

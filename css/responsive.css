@@ -1,20 +1,24 @@
+@media (max-width: 1600px) {
+  .section-tertiary .row-primary {
+    max-width: 100%;
+  }
+  .section-tertiary .row-primary .img {
+    width: 60%;
+  }
+}
 @media (max-width: 80em) {
   .d-xl-none {
     display: none;
   }
-
   .d-xl-block {
     display: block;
   }
-
   .d-xl-flex {
     display: flex;
   }
-
   .d-xl-grid {
     display: grid;
   }
-
   /*------------------------------------------------------------- header*/
   /*------------------------------------------------------------- index*/
 }
@@ -22,88 +26,170 @@
   .d-lg-none {
     display: none;
   }
-
   .d-lg-block {
     display: block;
   }
-
   .d-lg-flex {
     display: flex;
   }
-
   .d-lg-grid {
     display: grid;
   }
-
   /*------------------------------------------------------------- header*/
   .header {
     padding: 16px 20px;
   }
   .header-mb__centerLogo {
     transition: all 0.2s ease-in-out;
-    height: 80px;
+    height: 50px;
   }
   .header.sticky {
     padding: 10px 20px;
   }
   .header.sticky .header-mb__centerLogo {
-    height: 50px;
+    height: 40px;
   }
-
   /*------------------------------------------------------------- index*/
+  .section-primary,
+.section-secondary,
+.section-tertiary {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .section-primary .title-primary,
+.section-secondary .title-primary,
+.section-tertiary .title-primary {
+    font-size: 40px;
+  }
+  .section-secondary__text {
+    bottom: 0px;
+    right: 20px;
+  }
+  .section-tertiary-container .title-primary {
+    margin-bottom: 60px;
+  }
+  .section-tertiary .row-primary,
+.section-tertiary .row-secondary {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .section-tertiary .row-primary .img {
+    width: 100%;
+  }
+  .section-tertiary .row-secondary {
+    margin-top: 80px;
+  }
+  .section-tertiary .row-secondary .text {
+    order: 1;
+  }
+  .section-tertiary .row-secondary .img {
+    order: 2;
+  }
+  .row-partner {
+    gap: 40px 20px;
+  }
 }
 @media (max-width: 48em) {
   .d-md-none {
     display: none;
   }
-
   .d-md-block {
     display: block;
   }
-
   .d-md-flex {
     display: flex;
   }
-
   .d-md-grid {
     display: grid;
   }
-
   /*------------------------------------------------------------- header*/
   /*------------------------------------------------------------- index*/
-  .heading-primary {
-    font-size: 48px;
+  .section-primary,
+.section-secondary,
+.section-tertiary {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media (max-width: 40em) {
   .d-sm-none {
     display: none;
   }
-
   .d-sm-block {
     display: block;
   }
-
   .d-sm-flex {
     display: flex;
   }
-
   .d-sm-grid {
     display: grid;
   }
-
   /*------------------------------------------------------------- header*/
+  .header {
+    padding: 10px 0;
+  }
+  .header.sticky {
+    padding: 10px 0;
+  }
   .header.sticky .header-mb__centerLogo {
+    height: 30px;
+  }
+  .header-mb__centerLogo {
     height: 40px;
   }
-
-  .header-mb__centerLogo {
-    height: 64px;
-  }
-
   /*------------------------------------------------------------- index*/
-  .heading-primary {
-    font-size: 32px;
+  .section-primary,
+.section-secondary,
+.section-tertiary {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-secondary__text {
+    right: 46px;
+    bottom: -18px;
+  }
+  .section-primary {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  .section-primary-container .img-primary {
+    padding: 0;
+  }
+  .section-primary .title-secondary {
+    font-size: 18px;
+  }
+  .section-secondary {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .section-secondary .swiper-wrapper {
+    padding-bottom: 20px;
+  }
+  .section-tertiary {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .section-tertiary-container .title-primary {
+    margin-bottom: 40px;
+  }
+  .section-tertiary .row-secondary {
+    margin-top: 40px;
+  }
+  .section-tertiary .text {
+    font-size: 18px;
+  }
+  .section-primary .title-primary,
+.section-secondary .title-primary,
+.section-tertiary .title-primary {
+    font-size: 26px;
+  }
+  .list-disc {
+    font-size: 18px;
+  }
+  .row-partner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
 }
 @media (max-width: 25em) {

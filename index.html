@@ -14,9 +14,12 @@
         <meta name="theme-color" content="#ffffff" />
         <!-- end favicon -->
         <title>Explus</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/responsive.css" />
@@ -25,7 +28,10 @@
 
     <body>
         <!-- header -->
-        <header id="header" class="header w-wrapper relative js__header">
+        <header
+            id="header"
+            class="header w-wrapper relative js__header d-lg-none"
+        >
             <!-- pc -->
             <div
                 class="header-pc w-1140 d-2xl-flex d-lg-none items-center justify-between"
@@ -43,156 +49,264 @@
                 <!-- end logo -->
                 <!-- navbar -->
                 <ul
-                    class="navbar fs-14 d-2xl-flex items-center justify-between text-gray-ab flex-1"
+                    class="navbar fs-14 d-2xl-flex items-center justify-between text-gray-ab flex-1 js__activeContainer"
                 >
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link active">Với phóng viên</a>
+                        <a
+                            href="#el-2"
+                            class="navbar-link active js__activeElement"
+                            >Với phóng viên</a
+                        >
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Người xuất bản</a>
+                        <a href="#el-3" class="navbar-link js__activeElement"
+                            >Người xuất bản</a
+                        >
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Quản trị viên</a>
+                        <a href="#el-4" class="navbar-link js__activeElement"
+                            >Quản trị viên</a
+                        >
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">SEO</a>
+                        <a href="#el-5" class="navbar-link js__activeElement"
+                            >SEO</a
+                        >
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Với độc giả</a>
+                        <a href="#el-6" class="navbar-link js__activeElement"
+                            >Với độc giả</a
+                        >
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Bảo mật</a>
+                        <a href="#el-7" class="navbar-link js__activeElement"
+                            >Bảo mật</a
+                        >
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Khách hàng</a>
+                        <a href="#el-8" class="navbar-link js__activeElement"
+                            >Khách hàng</a
+                        >
                     </li>
-                    
                 </ul>
                 <!-- end navbar -->
 
                 <!-- action -->
-                <div class="header-action d-2xl-flex items-center justify-between flex-0">
+                <div
+                    class="header-action d-2xl-flex items-center justify-between flex-0"
+                >
                     <button class="btn">Báo giá</button>
                 </div>
                 <!-- end action -->
             </div>
             <!-- end pc -->
-            <!-- mb -->
-            <div
-                class="header-mb w-wrapper d-2xl-none d-lg-flex items-center justify-between"
-            >
-                <!-- left -->
-                <div class="header-mb__left js__subMenuContainer">
-                    <!-- icon -->
-                    <div class="header-mb__leftIcon js__showSubMenu">
-                        <img src="./images/icon/bars-solid.svg" alt="" />
-                    </div>
-                    <!-- end icon -->
-                    <!-- content -->
-                    <div class="sub-menu js__subMenu">
-                        <div
-                            class="sub-menu__heading d-2xl-flex items-center justify-between"
-                        >
-                            <h3 class="text-white fs-32">Menu</h3>
-                            <div
-                                class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu"
-                            >
-                                <img src="./images/icon/close.svg" alt="" />
-                            </div>
-                        </div>
-                        <!-- list -->
-                        <ul class="sub-menu__list">
-                            <li class="sub-menu__item">
-                                <a href="#">Giới thiệu</a>
-                            </li>
-                            <li class="sub-menu__item">
-                                <a href="#">Giới thiệu</a>
-                            </li>
-                            <li class="sub-menu__item">
-                                <a href="#">Giới thiệu</a>
-                            </li>
-                            <li class="sub-menu__item">
-                                <a href="#">Giới thiệu</a>
-                            </li>
-                            <li class="sub-menu__item">
-                                <a href="#">Giới thiệu</a>
-                            </li>
-                        </ul>
-                        <!-- end list -->
-                    </div>
-                    <!-- end content -->
-                </div>
-                <!-- end left -->
-                <!-- center -->
-                <div class="header-mb__center">
-                    <a href="#">
-                        <img
-                            src="./images/icon/logo.svg"
-                            alt=""
-                            class="header-mb__centerLogo"
-                        />
-                    </a>
-                </div>
-                <!-- end center -->
-                
-            </div>
-            <!-- end mb -->
         </header>
         <!-- end header -->
+        <!-- mb -->
+        <div
+            class="header-mb w-wrapper d-2xl-none d-lg-flex items-center justify-between"
+        >
+            <!-- left -->
+            <div class="header-mb__left js__subMenuContainer">
+                <!-- icon -->
+                <div class="header-mb__leftIcon js__showSubMenu">
+                    <img src="./images/icon/bars-solid.svg" alt="" />
+                </div>
+                <!-- end icon -->
+                <!-- content -->
+                <div class="sub-menu js__subMenu">
+                    <div
+                        class="sub-menu__heading d-2xl-flex items-center justify-between"
+                    >
+                        <h3 class="text-white fs-32">Menu</h3>
+                        <div
+                            class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu"
+                        >
+                            <img src="./images/icon/close.svg" alt="" />
+                        </div>
+                    </div>
+                    <!-- list -->
+                    <ul class="sub-menu__list js__activeContainer">
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-2"
+                                class="navbar-link active js__activeElement"
+                                >Với phóng viên</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-3"
+                                class="navbar-link js__activeElement"
+                                >Người xuất bản</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-4"
+                                class="navbar-link js__activeElement"
+                                >Quản trị viên</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-5"
+                                class="navbar-link js__activeElement"
+                                >SEO</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-6"
+                                class="navbar-link js__activeElement"
+                                >Với độc giả</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-7"
+                                class="navbar-link js__activeElement"
+                                >Bảo mật</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-8"
+                                class="navbar-link js__activeElement"
+                                >Khách hàng</a
+                            >
+                        </li>
+                    </ul>
+                    <!-- end list -->
+                </div>
+                <!-- end content -->
+            </div>
+            <!-- end left -->
+            <!-- center -->
+            <div class="header-mb__center">
+                <a href="#">
+                    <img
+                        src="./images/icon/logo.svg"
+                        alt=""
+                        class="header-mb__centerLogo"
+                    />
+                </a>
+            </div>
+            <!-- end center -->
+            <!-- right -->
+            <div class="header-mb__right flex-0">
+                <button class="btn">Báo giá</button>
+            </div>
+            <!-- end right -->
+        </div>
+        <!-- end mb -->
         <!-- main -->
         <main id="main" class="main">
             <!-- primary -->
-            <section class="section-primary w-wrapper relative overflow-hidden bg-black">
+            <section
+                id="el-1"
+                class="section-primary w-wrapper relative overflow-hidden bg-black"
+            >
                 <div class="w-1140 section-primary-container">
-                    <h1 class="title-primary text-white fs-48">Explus CMS phiên bản mới <br> Mở ra những khả năng mới trong làng báo.</h1>
+                    <h1 class="title-primary text-white fs-48">
+                        Explus CMS phiên bản mới <br />
+                        Mở ra những khả năng mới trong làng báo.
+                    </h1>
                     <h2 class="title-secondary text-white fs-21 mt-40">
-                        Được thiết kế cho phóng viên, biên tập viên, CMS phiên bản mới mang đến trải nghiệm mượt mà, hiệu quả với giao diện trực quan, công cụ soạn thảo mạnh mẽ, tối ưu SEO, bảo mật toàn diện và khả năng chịu tải tốt.
+                        Được thiết kế cho phóng viên, biên tập viên, CMS phiên
+                        bản mới mang đến trải nghiệm mượt mà, hiệu quả với giao
+                        diện trực quan, công cụ soạn thảo mạnh mẽ, tối ưu SEO,
+                        bảo mật toàn diện và khả năng chịu tải tốt.
                     </h2>
                     <div class="img-primary">
-                        <img src="./images/bg_1.png" alt="">
+                        <img src="./images/bg_1.png" alt="" />
                     </div>
                 </div>
             </section>
             <!-- end primary -->
 
             <!-- secondary -->
-            <section class="section-secondary w-wrapper relative overflow-hidden bg-white">
+            <section
+                id="el-2"
+                class="section-secondary w-wrapper relative overflow-hidden bg-white"
+            >
                 <div class="section-secondary-container">
                     <div class="w-1140">
                         <h2 class="title-primary fs-48">
                             Trải nghiệm mượt mà, tác nghiệp mọi nơi
                         </h2>
                         <ul class="list-disc mt-24 fs-21">
-                            <li>Tiết kiệm thời gian và công sức trong việc viết bài.</li>
+                            <li>
+                                Tiết kiệm thời gian và công sức trong việc viết
+                                bài.
+                            </li>
                             <li>Dễ dùng, thao tác nhanh chóng, mượt mà.</li>
-                            <li>Viết bài mọi lúc mọi nơi với điện thoại và máy tính bảng.</li>
-                            <li>Tri tuệ nhân tạo hỗ trợ viết bài, tạo ảnh minh họa.</li>
-                            <li>Dễ dàng chủ động tạo bài eMagazine, Longform.</li>
+                            <li>
+                                Viết bài mọi lúc mọi nơi với điện thoại và máy
+                                tính bảng.
+                            </li>
+                            <li>
+                                Tri tuệ nhân tạo hỗ trợ viết bài, tạo ảnh minh
+                                họa.
+                            </li>
+                            <li>
+                                Dễ dàng chủ động tạo bài eMagazine, Longform.
+                            </li>
                             <li>Tối ưu SEO, quản lý nội dung hiệu quả.</li>
                         </ul>
                     </div>
-                    <div class="w-1700 section-secondary__slide js__swiperThreeContainer">
+                    <div
+                        class="w-1700 section-secondary__slide js__swiperThreeContainer"
+                    >
                         <div class="swiper js__swiperThreeItems">
                             <div class="swiper-wrapper">
                                 <!-- slide -->
                                 <div class="swiper-slide">
-                                    <div class="relative section-secondary__group">
-                                        <img src="./images/bg_2.png" alt="" class="section-secondary__img">
-                                        <span class="section-secondary__text text-gray-51 fs-14 absolute">Lấy bài từ báo bạn chỉ với một click</span>
+                                    <div
+                                        class="relative section-secondary__group"
+                                    >
+                                        <img
+                                            src="./images/bg_2.png"
+                                            alt=""
+                                            class="section-secondary__img"
+                                        />
+                                        <span
+                                            class="section-secondary__text text-gray-51 fs-14 absolute"
+                                            >Lấy bài từ báo bạn chỉ với một
+                                            click</span
+                                        >
                                     </div>
                                 </div>
                                 <!-- slide -->
                                 <div class="swiper-slide">
-                                    <div class="relative section-secondary__group">
-                                        <img src="./images/bg_3.png" alt="" class="section-secondary__img">
-                                        <span class="section-secondary__text text-gray-51 fs-14 absolute">Chatbot AI hỗ trợ viết bài</span>
+                                    <div
+                                        class="relative section-secondary__group"
+                                    >
+                                        <img
+                                            src="./images/bg_3.png"
+                                            alt=""
+                                            class="section-secondary__img"
+                                        />
+                                        <span
+                                            class="section-secondary__text text-gray-51 fs-14 absolute"
+                                            >Chatbot AI hỗ trợ viết bài</span
+                                        >
                                     </div>
                                 </div>
                                 <!-- slide -->
                                 <div class="swiper-slide">
-                                    <div class="relative section-secondary__group">
-                                        <img src="./images/bg_4.png" alt="" class="section-secondary__img">
-                                        <span class="section-secondary__text text-gray-51 fs-14 absolute">Công cụ hỗ trợ SEO hiệu quả</span>
+                                    <div
+                                        class="relative section-secondary__group"
+                                    >
+                                        <img
+                                            src="./images/bg_4.png"
+                                            alt=""
+                                            class="section-secondary__img"
+                                        />
+                                        <span
+                                            class="section-secondary__text text-gray-51 fs-14 absolute"
+                                            >Công cụ hỗ trợ SEO hiệu quả</span
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +317,10 @@
             <!-- end secondary -->
 
             <!-- tertiary -->
-            <section class="section-tertiary w-wrapper relative overflow-hidden bg-black text-white">
+            <section
+                id="el-3"
+                class="section-tertiary w-wrapper relative overflow-hidden bg-black text-white"
+            >
                 <div class="section-tertiary-container">
                     <h2 class="title-primary w-1140 fs-48">
                         Biên tập nhanh chóng, quản lý hiệu quả
@@ -211,17 +328,46 @@
                     <div class="row-primary d-2xl-flex gap-40">
                         <!-- text -->
                         <div class="text flex-1 fs-21">
-                            <p class="mb-20"><strong>Duyệt bài nhanh chóng:</strong> Giao diện trực quan, dễ sử dụng, giúp bạn duyệt bài nhanh chóng và chính xác. Lọc bài viết theo tiêu chí, trạng thái, tác giả giúp bạn quản lý bài viết hiệu quả.</p>
-                            <p class="mb-20"><strong>Dàn trang linh hoạt:</strong> Dễ dàng sắp xếp vị trí bài viết, hình ảnh, video theo ý muốn. Tạo nhiều giao diện bài như: bài ảnh, video, eMagazine, Longform ...  Thống kê chi tiết về số lượng bài viết, lượt xem, lượt bình luận,...</p>
-                            <p class="mb-20"><strong>Chấm nhuận bút:</strong> Hệ thống chấm nhuận bút linh hoạt: tự động, bán tự động, thủ công.</p>
-                            <p class="mb-20">Thống kê chi tiết về số lượng bài viết, lượt xem, lượt bình luận,...</p>
-                            <p class="mb-20">Báo cáo đầy đủ về hiệu quả hoạt động của website.</p>
-                            <p><strong>Hỗ trợ tối ưu SEO:</strong> Tích hợp các công cụ SEO giúp tối ưu hóa nội dung bài viết. Gợi ý từ khóa phù hợp, giúp bài viết thu hút nhiều traffic hơn. Theo dõi hiệu quả SEO thông qua các báo cáo chi tiết.</p>
+                            <p class="mb-20">
+                                <strong>Duyệt bài nhanh chóng:</strong> Giao
+                                diện trực quan, dễ sử dụng, giúp bạn duyệt bài
+                                nhanh chóng và chính xác. Lọc bài viết theo tiêu
+                                chí, trạng thái, tác giả giúp bạn quản lý bài
+                                viết hiệu quả.
+                            </p>
+                            <p class="mb-20">
+                                <strong>Dàn trang linh hoạt:</strong> Dễ dàng
+                                sắp xếp vị trí bài viết, hình ảnh, video theo ý
+                                muốn. Tạo nhiều giao diện bài như: bài ảnh,
+                                video, eMagazine, Longform ... Thống kê chi tiết
+                                về số lượng bài viết, lượt xem, lượt bình
+                                luận,...
+                            </p>
+                            <p class="mb-20">
+                                <strong>Chấm nhuận bút:</strong> Hệ thống chấm
+                                nhuận bút linh hoạt: tự động, bán tự động, thủ
+                                công.
+                            </p>
+                            <p class="mb-20">
+                                Thống kê chi tiết về số lượng bài viết, lượt
+                                xem, lượt bình luận,...
+                            </p>
+                            <p class="mb-20">
+                                Báo cáo đầy đủ về hiệu quả hoạt động của
+                                website.
+                            </p>
+                            <p>
+                                <strong>Hỗ trợ tối ưu SEO:</strong> Tích hợp các
+                                công cụ SEO giúp tối ưu hóa nội dung bài viết.
+                                Gợi ý từ khóa phù hợp, giúp bài viết thu hút
+                                nhiều traffic hơn. Theo dõi hiệu quả SEO thông
+                                qua các báo cáo chi tiết.
+                            </p>
                         </div>
                         <!-- end text -->
                         <!-- img -->
                         <div class="img flex-0">
-                            <img src="./images/bg_5.png" alt="">
+                            <img src="./images/bg_5.png" alt="" />
                         </div>
                         <!-- end img -->
                     </div>
@@ -230,7 +376,10 @@
             <!-- end tertiary -->
 
             <!-- secondary -->
-            <section class="section-secondary w-wrapper relative overflow-hidden bg-white">
+            <section
+                id="el-4"
+                class="section-secondary w-wrapper relative overflow-hidden bg-white"
+            >
                 <div class="section-secondary-container">
                     <div class="w-1140">
                         <h2 class="title-primary fs-48">
@@ -243,28 +392,57 @@
                             <li>Theo dõi KPI, báo cáo chi tiết.</li>
                         </ul>
                     </div>
-                    <div class="w-1700 section-secondary__slide js__swiperThreeContainer">
+                    <div
+                        class="w-1700 section-secondary__slide js__swiperThreeContainer"
+                    >
                         <div class="swiper js__swiperThreeItems">
                             <div class="swiper-wrapper">
                                 <!-- slide -->
                                 <div class="swiper-slide">
-                                    <div class="relative section-secondary__group">
-                                        <img src="./images/bg_6.png" alt="" class="section-secondary__img">
-                                        <span class="section-secondary__text text-gray-51 fs-14 absolute">Quản lý phân quyền</span>
+                                    <div
+                                        class="relative section-secondary__group"
+                                    >
+                                        <img
+                                            src="./images/bg_6.png"
+                                            alt=""
+                                            class="section-secondary__img"
+                                        />
+                                        <span
+                                            class="section-secondary__text text-gray-51 fs-14 absolute"
+                                            >Quản lý phân quyền</span
+                                        >
                                     </div>
                                 </div>
                                 <!-- slide -->
                                 <div class="swiper-slide">
-                                    <div class="relative section-secondary__group">
-                                        <img src="./images/bg_7.png" alt="" class="section-secondary__img">
-                                        <span class="section-secondary__text text-gray-51 fs-14 absolute">Quản lý tài khoản CMS</span>
+                                    <div
+                                        class="relative section-secondary__group"
+                                    >
+                                        <img
+                                            src="./images/bg_7.png"
+                                            alt=""
+                                            class="section-secondary__img"
+                                        />
+                                        <span
+                                            class="section-secondary__text text-gray-51 fs-14 absolute"
+                                            >Quản lý tài khoản CMS</span
+                                        >
                                     </div>
                                 </div>
                                 <!-- slide -->
                                 <div class="swiper-slide">
-                                    <div class="relative section-secondary__group">
-                                        <img src="./images/bg_8.png" alt="" class="section-secondary__img">
-                                        <span class="section-secondary__text text-gray-51 fs-14 absolute">Quản lý quảng cáo trực quan</span>
+                                    <div
+                                        class="relative section-secondary__group"
+                                    >
+                                        <img
+                                            src="./images/bg_8.png"
+                                            alt=""
+                                            class="section-secondary__img"
+                                        />
+                                        <span
+                                            class="section-secondary__text text-gray-51 fs-14 absolute"
+                                            >Quản lý quảng cáo trực quan</span
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +453,10 @@
             <!-- end secondary -->
 
             <!-- tertiary -->
-            <section class="section-tertiary w-wrapper relative overflow-hidden bg-black text-white">
+            <section
+                id="el-5"
+                class="section-tertiary w-wrapper relative overflow-hidden bg-black text-white"
+            >
                 <div class="section-tertiary-container">
                     <h2 class="title-primary w-1140 fs-48">
                         Tăng tốc SEO, bứt phá top Google
@@ -287,28 +468,52 @@
                             <div>
                                 <strong>Tăng tốc độ tải trang:</strong>
                                 <ul class="list-disc my-20">
-                                    <li>Tối ưu hóa code, hình ảnh, video giúp website tải trang nhanh chóng.</li>
-                                    <li>Cache nội dung, tối ưu hóa CDN giúp tăng hiệu suất website.</li>
-                                    <li>Theo dõi điểm Google Speed, đưa ra giải pháp cải thiện hiệu quả.</li>
+                                    <li>
+                                        Tối ưu hóa code, hình ảnh, video giúp
+                                        website tải trang nhanh chóng.
+                                    </li>
+                                    <li>
+                                        Cache nội dung, tối ưu hóa CDN giúp tăng
+                                        hiệu suất website.
+                                    </li>
+                                    <li>
+                                        Theo dõi điểm Google Speed, đưa ra giải
+                                        pháp cải thiện hiệu quả.
+                                    </li>
                                 </ul>
                             </div>
                             <div>
-                                <strong>Tạo AMP và tối ưu sâu về sitemap, schema:</strong>
+                                <strong
+                                    >Tạo AMP và tối ưu sâu về sitemap,
+                                    schema:</strong
+                                >
                                 <ul class="list-disc my-20">
-                                    <li>Tự động tạo sitemap XML, giúp Google thu thập nội dung website đầy đủ.</li>
-                                    <li>Cung cấp giao diện đơn giản để tạo và quản lý schema markup.</li>
-                                    <li>Hỗ trợ AMP (Accelerated Mobile Pages), giúp website hiển thị nhanh chóng trên thiết bị di động.</li>
+                                    <li>
+                                        Tự động tạo sitemap XML, giúp Google thu
+                                        thập nội dung website đầy đủ.
+                                    </li>
+                                    <li>
+                                        Cung cấp giao diện đơn giản để tạo và
+                                        quản lý schema markup.
+                                    </li>
+                                    <li>
+                                        Hỗ trợ AMP (Accelerated Mobile Pages),
+                                        giúp website hiển thị nhanh chóng trên
+                                        thiết bị di động.
+                                    </li>
                                 </ul>
                             </div>
                             <div>
-                                <strong>Hỗ trợ indexing, giúp website được Google thu thập ngay khi xuất bản:</strong>
+                                <strong
+                                    >Hỗ trợ indexing, giúp website được Google
+                                    thu thập ngay khi xuất bản:</strong
+                                >
                             </div>
-                            
                         </div>
                         <!-- end text -->
                         <!-- img -->
                         <div class="img flex-0">
-                            <img src="./images/bg_9.png" alt="">
+                            <img src="./images/bg_9.png" alt="" />
                         </div>
                         <!-- end img -->
                     </div>
@@ -317,39 +522,68 @@
                     <div class="row-secondary w-1484 d-2xl-flex items-center">
                         <!-- img -->
                         <div class="img flex-0">
-                            <img src="./images/bg_10.png" alt="">
+                            <img src="./images/bg_10.png" alt="" />
                         </div>
                         <!-- end img -->
                         <!-- text -->
                         <div class="text flex-1 fs-21">
                             <div>
-                                <strong>Báo cáo chi tiết về hiệu quả SEO:</strong>
+                                <strong
+                                    >Báo cáo chi tiết về hiệu quả SEO:</strong
+                                >
                                 <ul class="list-disc my-20">
-                                    <li>Cung cấp thống kê về lượng truy cập, lượt xem trang, tỷ lệ chuyển đổi.</li>
-                                    <li>Theo dõi thứ hạng từ khóa trên Google Search Engine Results Page (SERP).</li>
-                                    <li>Báo cáo chi tiết về hiệu quả của các chiến dịch SEO.</li>
+                                    <li>
+                                        Cung cấp thống kê về lượng truy cập,
+                                        lượt xem trang, tỷ lệ chuyển đổi.
+                                    </li>
+                                    <li>
+                                        Theo dõi thứ hạng từ khóa trên Google
+                                        Search Engine Results Page (SERP).
+                                    </li>
+                                    <li>
+                                        Báo cáo chi tiết về hiệu quả của các
+                                        chiến dịch SEO.
+                                    </li>
                                 </ul>
                             </div>
                             <div>
-                                <strong>Ngoài ra, CMS còn cung cấp các tính năng SEO khác như:</strong>
+                                <strong
+                                    >Ngoài ra, CMS còn cung cấp các tính năng
+                                    SEO khác như:</strong
+                                >
                                 <ul class="list-disc my-20">
-                                    <li>Tự động tối ưu hóa tiêu đề, mô tả meta.</li>
-                                    <li>Gợi ý từ khóa phù hợp cho nội dung bài viết.</li>
-                                    <li>Cung cấp các công cụ kiểm tra SEO on-page.</li>
+                                    <li>
+                                        Tự động tối ưu hóa tiêu đề, mô tả meta.
+                                    </li>
+                                    <li>
+                                        Gợi ý từ khóa phù hợp cho nội dung bài
+                                        viết.
+                                    </li>
+                                    <li>
+                                        Cung cấp các công cụ kiểm tra SEO
+                                        on-page.
+                                    </li>
                                 </ul>
                             </div>
                             <div>
                                 <strong>Với Explus CMS, bạn có thể:</strong>
                                 <ul class="list-disc my-20">
-                                    <li>Tiết kiệm thời gian và công sức trong việc tối ưu SEO cho website.</li>
-                                    <li>Nâng cao hiệu quả SEO, thu hút nhiều traffic hơn cho website.</li>
-                                    <li>Đạt thứ hạng cao trên Google SERP, tăng khả năng hiển thị website.</li>
+                                    <li>
+                                        Tiết kiệm thời gian và công sức trong
+                                        việc tối ưu SEO cho website.
+                                    </li>
+                                    <li>
+                                        Nâng cao hiệu quả SEO, thu hút nhiều
+                                        traffic hơn cho website.
+                                    </li>
+                                    <li>
+                                        Đạt thứ hạng cao trên Google SERP, tăng
+                                        khả năng hiển thị website.
+                                    </li>
                                 </ul>
                             </div>
-                            
                         </div>
                         <!-- end text -->
-                        
                     </div>
                     <!-- end row secondary -->
                 </div>
@@ -357,7 +591,10 @@
             <!-- end tertiary -->
 
             <!-- tertiary -->
-            <section class="section-tertiary w-wrapper relative overflow-hidden">
+            <section
+                id="el-6"
+                class="section-tertiary w-wrapper relative overflow-hidden"
+            >
                 <div class="section-tertiary-container">
                     <h2 class="title-primary w-1140 fs-48">
                         Mang đến cho độc giả trải nghiệm đọc tuyệt vời!
@@ -366,27 +603,43 @@
                     <div class="row-primary d-2xl-flex gap-40 items-center">
                         <!-- text -->
                         <div class="text flex-1 fs-21">
-                            <p class="mb-20"><strong>Truy cập nhanh chóng:</strong> Tận hưởng tốc độ tải trang mượt mà, bất kể bạn sử dụng thiết bị nào.</p>
-                            <p class="mb-20"><strong>Giao diện tối giản:</strong> Thiết kế đơn giản, trực quan giúp bạn dễ dàng tìm kiếm và đọc nội dung yêu thích.</p>
-                            <p class="mb-20"><strong>Dễ đọc:</strong> Bố cục khoa học, phông chữ dễ đọc, mang đến sự thoải mái cho mắt bạn.</p>
-                            <p class="mb-20"><strong>Hoạt động ổn định:</strong> Hệ thống hoạt động trơn tru, ít lỗi, đảm bảo trải nghiệm đọc không bị gián đoạn.</p>
-                            
+                            <p class="mb-20">
+                                <strong>Truy cập nhanh chóng:</strong> Tận hưởng
+                                tốc độ tải trang mượt mà, bất kể bạn sử dụng
+                                thiết bị nào.
+                            </p>
+                            <p class="mb-20">
+                                <strong>Giao diện tối giản:</strong> Thiết kế
+                                đơn giản, trực quan giúp bạn dễ dàng tìm kiếm và
+                                đọc nội dung yêu thích.
+                            </p>
+                            <p class="mb-20">
+                                <strong>Dễ đọc:</strong> Bố cục khoa học, phông
+                                chữ dễ đọc, mang đến sự thoải mái cho mắt bạn.
+                            </p>
+                            <p class="mb-20">
+                                <strong>Hoạt động ổn định:</strong> Hệ thống
+                                hoạt động trơn tru, ít lỗi, đảm bảo trải nghiệm
+                                đọc không bị gián đoạn.
+                            </p>
                         </div>
                         <!-- end text -->
                         <!-- img -->
                         <div class="img flex-0">
-                            <img src="./images/bg_11.png" alt="">
+                            <img src="./images/bg_11.png" alt="" />
                         </div>
                         <!-- end img -->
                     </div>
                     <!-- end row primary -->
-                    
                 </div>
             </section>
             <!-- end tertiary -->
 
             <!-- tertiary -->
-            <section class="section-tertiary w-wrapper relative overflow-hidden bg-black text-white">
+            <section
+                id="el-7"
+                class="section-tertiary w-wrapper relative overflow-hidden bg-black text-white"
+            >
                 <div class="section-tertiary-container">
                     <h2 class="title-primary w-1140 fs-48">
                         Bảo mật toàn diện, an tâm cho mọi dữ liệu
@@ -395,30 +648,120 @@
                     <div class="row-secondary w-1484 d-2xl-flex items-center">
                         <!-- img -->
                         <div class="img flex-0">
-                            <img src="./images/bg_12.png" alt="">
+                            <img src="./images/bg_12.png" alt="" />
                         </div>
                         <!-- end img -->
                         <!-- text -->
                         <div class="text flex-1 fs-21">
-                            <p class="mb-20"><strong>Hệ thống chống DDoS mạnh mẽ:</strong>Chống đỡ các cuộc tấn công DDoS lên đến 100.000 rps, bảo vệ website của bạn khỏi mọi nguy cơ.</p>
-                            <p class="mb-20"><strong>Mã hóa dữ liệu tiên tiến:</strong> Sử dụng thuật toán mã hóa hiện đại nhất để đảm bảo an toàn cho mọi dữ liệu của bạn.</p>
-                            <p class="mb-20"><strong>Cập nhật liên tục:</strong> Cập nhật thường xuyên các bản vá bảo mật để bảo vệ website khỏi các lỗ hổng mới nhất.</p>
-                            <p class="mb-20"><strong>Quản lý truy cập chặt chẽ:</strong> Hạn chế quyền truy cập vào hệ thống, chỉ những người được ủy quyền mới có thể truy cập dữ liệu.</p>
-                            <p><strong>Sao lưu dữ liệu thường xuyên:</strong> Sao lưu dữ liệu định kỳ để đảm bảo bạn không bao giờ mất dữ liệu.</p>
-                            
+                            <p class="mb-20">
+                                <strong>Hệ thống chống DDoS mạnh mẽ:</strong
+                                >Chống đỡ các cuộc tấn công DDoS lên đến 100.000
+                                rps, bảo vệ website của bạn khỏi mọi nguy cơ.
+                            </p>
+                            <p class="mb-20">
+                                <strong>Mã hóa dữ liệu tiên tiến:</strong> Sử
+                                dụng thuật toán mã hóa hiện đại nhất để đảm bảo
+                                an toàn cho mọi dữ liệu của bạn.
+                            </p>
+                            <p class="mb-20">
+                                <strong>Cập nhật liên tục:</strong> Cập nhật
+                                thường xuyên các bản vá bảo mật để bảo vệ
+                                website khỏi các lỗ hổng mới nhất.
+                            </p>
+                            <p class="mb-20">
+                                <strong>Quản lý truy cập chặt chẽ:</strong> Hạn
+                                chế quyền truy cập vào hệ thống, chỉ những người
+                                được ủy quyền mới có thể truy cập dữ liệu.
+                            </p>
+                            <p>
+                                <strong>Sao lưu dữ liệu thường xuyên:</strong>
+                                Sao lưu dữ liệu định kỳ để đảm bảo bạn không bao
+                                giờ mất dữ liệu.
+                            </p>
                         </div>
                         <!-- end text -->
-                        
                     </div>
                     <!-- end row secondary -->
+                </div>
+            </section>
+            <!-- end tertiary -->
+
+            <!-- tertiary -->
+            <section
+                id="el-8"
+                class="section-tertiary w-wrapper relative overflow-hidden"
+            >
+                <div class="section-tertiary-container">
+                    <h2 class="title-primary w-1140 fs-64">
+                        Khách hàng đồng hành cùng Explus
+                    </h2>
+                    <div class="row-partner w-1140 d-2xl-flex">
+                        <img src="./images/logo/gdm.png" alt="" />
+                        <img src="./images/logo/NĐT.png" alt="" />
+                        <img src="./images/logo/cl.png" alt="" />
+                        <img src="./images/logo/pntd.png" alt="" />
+                        <img src="./images/logo/vov.svg" alt="" />
+                        <img src="./images/logo/60s.png" alt="" />
+                        <img src="./images/logo/skcd.svg" alt="" />
+                        <img src="./images/logo/shtt.png" alt="" />
+                        <img src="./images/logo/vnf.png" alt="" />
+                        <img src="./images/logo/inv.png" alt="" />
+                        <img src="./images/logo/nnvn.png" alt="" />
+                        <img src="./images/logo/tcdn.png" alt="" />
+                        <img src="./images/logo/banduong.png" alt="" />
+                        <img src="./images/logo/pg.png" alt="" />
+                        <img src="./images/logo/gdo.png" alt="" />
+                        <img src="./images/logo/kttd.png" alt="" />
+                        <img src="./images/logo/skds.png" alt="" />
+                        <img src="./images/logo/dnt.png" alt="" />
+                        <img src="./images/logo/imoney.png" alt="" />
+                        <img src="./images/logo/clcs.png" alt="" />
+                        <img src="./images/logo/landnet.png" alt="" />
+                        <img src="./images/logo/golf.png" alt="" />
+                        <img src="./images/logo/chuabavang.png" alt="" />
+                        <img src="./images/logo/hometoday.png" alt="" />
+                        <img src="./images/logo/homeaz.png" alt="" />
+                        <img src="./images/logo/duocsg.png" alt="" />
+                        <img src="./images/logo/crystal.png" alt="" />
+                        <img src="./images/logo/cl.png" alt="" />
+                        <img src="./images/logo/vita.png" alt="" />
+                        <img src="./images/logo/vietnga.png" alt="" />
+                        <img src="./images/logo/alo.png" alt="" />
+                        <img src="./images/logo/ttvn.png" alt="" />
+                        <img src="./images/logo/yeugiadinh.png" alt="" />
+                        <img src="./images/logo/vietpress.png" alt="" />
+                        <img src="./images/logo/cpcs.png" alt="" />
+                        <img src="./images/logo/mgn.png" alt="" />
+                        <img src="./images/logo/travellive.png" alt="" />
+                        <img src="./images/logo/image_3.png" alt="" />
+                        <img src="./images/logo/image_4.png" alt="" />
+                    </div>
                 </div>
             </section>
             <!-- end tertiary -->
         </main>
         <!-- end main -->
         <!-- footer -->
-        <footer id="footer" class="footer">
-            
+        <footer id="footer" class="footer w-wrapper">
+            <div class="w-1140">
+                <div class="footer-logo d-2xl-flex justify-center">
+                    <a href="#"
+                        ><img src="./images/icon/logo_2.png" alt=""
+                    /></a>
+                </div>
+                <div class="footer-line my-20"></div>
+                <div class="footer-text">
+                    <p class="mb-4">
+                        CÔNG TY TNHH CÔNG NGHỆ TRUYỀN THÔNG EXPLUS
+                    </p>
+                    <p class="mb-4">
+                        Số 93 Sunrise A, The Manor Central Park, Đại Kim, Hoàng
+                        Mai, Hà Nội [<a href="#" class="text-link">chỉ đường</a
+                        >]
+                    </p>
+                    <a href="#">Zalo: 0967.36.1518</a>
+                </div>
+            </div>
         </footer>
         <!-- end footer -->
         <script src="./lib/swiper/swiper-bundle.min.js"></script>

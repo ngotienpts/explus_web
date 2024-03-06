@@ -282,7 +282,7 @@ img {
 }
 
 .w-1700 {
-  max-width: 1700px;
+  max-width: 1664px;
   margin: 0 auto;
 }
 
@@ -446,6 +446,10 @@ img {
 
 .fs-48 {
   font-size: 3rem;
+}
+
+.fs-64 {
+  font-size: 4rem;
 }
 
 /*=================================================================*/
@@ -1502,6 +1506,17 @@ img {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
+.header-mb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000;
+  transition: background 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  background-color: rgba(0, 0, 0, 0.9);
+}
 .header-mb__leftIcon {
   padding: 10px;
   margin-left: -10px;
@@ -1514,10 +1529,10 @@ img {
   padding: 10px;
 }
 .header-mb__left {
-  width: 70px;
+  width: 75px;
 }
 .header-mb__right {
-  width: 70px;
+  width: 75px;
 }
 .header-mb__rightIcon {
   justify-content: flex-end;
@@ -1557,6 +1572,9 @@ img {
   padding-left: 100px;
   padding-right: 45px;
 }
+.navbar-link {
+  color: #ababab;
+}
 .navbar-link.active {
   color: #fff;
 }
@@ -1571,10 +1589,10 @@ img {
   right: 0;
   bottom: 0;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.9);
-  width: auto;
+  background-color: rgba(0, 0, 0, 0.72);
+  width: 50%;
   color: #fff;
-  padding: 30px;
+  padding: 20px;
   opacity: 0;
   visibility: hidden;
   display: none;
@@ -1584,6 +1602,8 @@ img {
   opacity: 1;
   visibility: visible;
   display: block;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 .sub-menu__heading {
   padding-bottom: 20px;
@@ -1675,6 +1695,37 @@ img {
 .section-tertiary .row-secondary {
   margin-top: 150px;
   gap: 100px;
+}
+
+.row-partner {
+  flex-wrap: wrap;
+  gap: 60px 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.row-partner img {
+  flex-shrink: 0;
+}
+
+.footer {
+  background-color: #f5f5f7;
+  padding-top: 36px;
+  padding-bottom: 46px;
+}
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.footer-text {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.56);
+}
+.footer-text .text-link {
+  color: #3971b6;
+}
+.footer-text a:hover {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
