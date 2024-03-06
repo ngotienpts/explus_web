@@ -50,6 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
                                 .querySelector(".active.js__activeElement")
                                 .classList.remove("active");
                             ele.classList.add("active");
+
+                            if (ele.closest(".js__subMenu")) {
+                                ele.closest(".js__subMenu").classList.remove(
+                                    "active"
+                                );
+                                bodyEle.classList.remove("overflow-hidden");
+                            }
                         };
                     });
                 });
