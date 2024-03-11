@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./images/favico.ico" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./images/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- end favicon -->
+        <title>Explus</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
+        <script src="./lib/jquery/jquery.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header
+            id="header"
+            class="header w-wrapper relative js__header d-lg-none"
+        >
+            <!-- pc -->
+            <div
+                class="header-pc w-1140 d-2xl-flex d-lg-none items-center justify-between"
+            >
+                <!-- logo -->
+                <div class="logo flex-0">
+                    <a href="#" class="logo-link">
+                        <img
+                            src="./images/icon/logo.svg"
+                            class="logo-img"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <!-- end logo -->
+                <!-- navbar -->
+                <ul
+                    class="navbar fs-14 d-2xl-flex items-center justify-between text-gray-ab flex-1 js__activeContainer"
+                >
+                    <li class="navbar-item">
+                        <a
+                            href="#el-2"
+                            class="navbar-link active js__activeElement"
+                            >Với phóng viên</a
+                        >
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#el-3" class="navbar-link js__activeElement"
+                            >Người xuất bản</a
+                        >
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#el-4" class="navbar-link js__activeElement"
+                            >Quản trị viên</a
+                        >
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#el-5" class="navbar-link js__activeElement"
+                            >SEO</a
+                        >
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#el-6" class="navbar-link js__activeElement"
+                            >Với độc giả</a
+                        >
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#el-7" class="navbar-link js__activeElement"
+                            >Bảo mật</a
+                        >
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#el-8" class="navbar-link js__activeElement"
+                            >Khách hàng</a
+                        >
+                    </li>
+                </ul>
+                <!-- end navbar -->
+
+                <!-- action -->
+                <div
+                    class="header-action d-2xl-flex items-center justify-between flex-0"
+                >
+                    <button class="btn">Báo giá</button>
+                </div>
+                <!-- end action -->
+            </div>
+            <!-- end pc -->
+        </header>
+        <!-- end header -->
+        <!-- mb -->
+        <div
+            class="header-mb w-wrapper d-2xl-none d-lg-flex items-center justify-between"
+        >
+            <!-- left -->
+            <div class="header-mb__left js__subMenuContainer">
+                <!-- icon -->
+                <div class="header-mb__leftIcon js__showSubMenu">
+                    <img src="./images/icon/bars-solid.svg" alt="" />
+                </div>
+                <!-- end icon -->
+                <!-- content -->
+                <div class="sub-menu js__subMenu">
+                    <div
+                        class="sub-menu__heading d-2xl-flex items-center justify-between"
+                    >
+                        <h3 class="text-white fs-32">Menu</h3>
+                        <div
+                            class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu"
+                        >
+                            <img src="./images/icon/close.svg" alt="" />
+                        </div>
+                    </div>
+                    <!-- list -->
+                    <ul class="sub-menu__list js__activeContainer">
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-2"
+                                class="navbar-link active js__activeElement"
+                                >Với phóng viên</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-3"
+                                class="navbar-link js__activeElement"
+                                >Người xuất bản</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-4"
+                                class="navbar-link js__activeElement"
+                                >Quản trị viên</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-5"
+                                class="navbar-link js__activeElement"
+                                >SEO</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-6"
+                                class="navbar-link js__activeElement"
+                                >Với độc giả</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-7"
+                                class="navbar-link js__activeElement"
+                                >Bảo mật</a
+                            >
+                        </li>
+                        <li class="sub-menu__item">
+                            <a
+                                href="#el-8"
+                                class="navbar-link js__activeElement"
+                                >Khách hàng</a
+                            >
+                        </li>
+                    </ul>
+                    <!-- end list -->
+                </div>
+                <!-- end content -->
+            </div>
+            <!-- end left -->
+            <!-- center -->
+            <div class="header-mb__center">
+                <a href="#">
+                    <img
+                        src="./images/icon/logo.svg"
+                        alt=""
+                        class="header-mb__centerLogo"
+                    />
+                </a>
+            </div>
+            <!-- end center -->
+            <!-- right -->
+            <div class="header-mb__right flex-0">
+                <button class="btn">Báo giá</button>
+            </div>
+            <!-- end right -->
+        </div>
+        <!-- end mb -->
+        <!-- main -->
+        <main id="main" class="main">
+            <!-- price quote -->
+            <div class="price-quote">
+                <!-- page -->
+                <div class="page w-1140">
+                    <!-- primary -->
+                    <section class="price-quote-primary">
+                        <!-- top -->
+                        <div class="price-quote-primary__top d-2xl-flex justify-between mb-30">
+                            <!-- left -->
+                            <div class="left d-2xl-flex items-center gap-25">
+                                <div>
+                                    <img src="./images/logo/logo_explus.png" alt="" class="flex-0">
+                                </div>
+                                <ul class="flex-1">
+                                    <li class="fw-700 fs-20 mb-4">Công ty TNHH Công nghệ Truyền thông Explus</li>
+                                    <li class="fs-16">VPĐD: 93 Sunrise A, The Manor Central Park, Đại Kim, Hoàng Mai, Hà Nội</li>
+                                    <li class="fs-16">
+                                        <span class="mr-30">0967.36.1518</span>
+                                        <span>info@explus.vn</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end left -->
+                            <!-- right -->
+                            <div class="right d-2xl-flex flex-col justify-between text-right ">
+                                <h1 class="fw-700 fs-36">Bảng báo giá</h1>
+                                <span class="fs-16">09/03/2024</span>
+                            </div>
+                            <!-- end right -->
+                        </div>
+                        <!-- end top -->
+                        <div class="line-5"></div>
+                        <!-- bot  -->
+                        <div class="price-quote-primary__bot d-2xl-flex justify-between my-30 gap-30">
+                            <!-- left -->
+                            <div class="left flex-1">
+                                <div class="fs-20 d-2xl-flex">
+                                    <p class="flex-0 mr-10">Kính gửi:</p>
+                                    <input type="text" class="w-full" placeholder="...............................................................................">
+                                </div>
+                                <div class="fs-16 d-2xl-flex">
+                                    <p class="flex-0 mr-10">Địa chỉ:</p>
+                                    <input type="text" class="w-full" placeholder=".....................................................................................">
+                                </div>
+                            </div>
+                            <!-- end left -->
+                            <!-- right -->
+                            <div class="right text-right flex-0">
+                                <div>
+                                    <span class="fs-20">Chi phí ban đầu:</span>
+                                    <span class="fs-20 fw-700">40.000.000</span>
+                                    <p class="fs-14 text-gray-66">VNĐ</p>
+                                </div>
+                                <div>
+                                    <span class="fs-20">Chi phí hàng tháng:</span>
+                                    <span class="fs-20 fw-700">4.310.000</span>
+                                    <p class="fs-14 text-gray-66 text-right">VNĐ/tháng</p>
+                                </div>
+                            </div>
+                            <!-- end right -->
+                        </div>
+                        <!-- end bot  -->
+                        <div class="line-1"></div>
+                    </section>
+                    <!-- end primary -->
+
+                    <!-- secondary -->
+                    <section class="price-quote-secondary">
+                        <table>
+                            <!-- row one -->
+                            <tr class="">
+                              <th class="text-left pb-20 pr-20">
+                                <h2 class="heading-primary fw-700 fs-36 lh-40 mb-12">Giao diện & Dữ liệu</h2>
+                                <p class="fs-13 text-gray-66">Thời gian triển khai: 02-06 tuần. Thanh toán 50% khi ký hợp đồng và 50% còn lại khi ký nghiệm thu.</p>
+                              </th>
+                              <th class="text-center p-20 bg-blue-008">
+                                <h3 class="fs-24">Gói cơ bản</h3>
+                                <p class="fs-13 text-gray-66">Bao gồm: trang chủ, trang mục, trang chi tiết, search, tag.</p>
+                              </th>
+                              <th class="text-center p-20">
+                                <h3 class="fs-24">Gói nâng cao</h3>
+                                <p class="fs-13 text-gray-66">Bao gồm: gói cơ bản + trang Photo, Video, eMagazine, Longform.</p>
+                              </th>
+                            </tr>
+                            <!-- end row one -->
+                            <!-- row two -->
+                            <tr>
+                                <td class="py-20 pr-20">
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="check-1" class="checkbox-input" checked="">
+                                        <label for="check-1">
+                                          <div class="check">
+                                                <img src="./images/check.png" alt="" class="checkbox-icon">
+                                          </div>
+                                          <div class="checkbox-text">
+                                                <p class="checkbox-title fw-700 fs-16 mb-15">Thiết kế đồ họa</p>
+                                                <p class="checkbox-des fs-16 text-gray-66">Designer có kinh nghiệm thiết kế cho những tờ báo hàng đầu Việt Nam thiết kế đồ họa trên nền tảng Figma</p>
+                                          </div>
+                                        </label>
+                                      </div>
+                                </td>
+                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                    <p class="fs-16 fw-700">20.000.000</p>
+                                </td>
+                                <td class="text-center p-20 vertical-middle">
+                                    <p class="fs-16 fw-700">30.000.000</p>
+                                </td>
+                            </tr>
+                            <!-- end row two -->
+                            <!-- row three -->
+                            <tr>
+                                <td class="py-20 pr-20">
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="check-2" class="checkbox-input" checked="">
+                                        <label for="check-2">
+                                          <div class="check">
+                                                <img src="./images/check.png" alt="" class="checkbox-icon">
+                                          </div>
+                                          <div class="checkbox-text">
+                                                <p class="checkbox-title fw-700 fs-16 mb-15">Lập trình giao diện Front-end</p>
+                                                <p class="checkbox-des fs-16 text-gray-66">Dựa vào bản vẽ của họa sĩ, lập trình viên front-end sẽ vẽ lại giao diện dưới hạng code HTML/CSS/JS</p>
+                                          </div>
+                                        </label>
+                                      </div>
+                                </td>
+                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                    <p class="fs-16 fw-700">10.000.000</p>
+                                </td>
+                                <td class="text-center p-20 vertical-middle">
+                                    <p class="fs-16 fw-700">15.000.000</p>
+                                </td>
+                            </tr>
+                            <!-- end row three -->
+                            <!-- row four -->
+                            <tr>
+                                <td class="py-20 pr-20">
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="check-3" class="checkbox-input" checked="">
+                                        <label for="check-3">
+                                          <div class="check">
+                                                <img src="./images/check.png" alt="" class="checkbox-icon">
+                                          </div>
+                                          <div class="checkbox-text">
+                                                <p class="checkbox-title fs-16 mb-15"><strong>Lập trình chức năng</strong> <span>(bắt buộc)</span></p>
+                                                <p class="checkbox-des fs-16 text-gray-66">Lập trình viên PHP sẽ code các tính năng, xử lý dữ liệu từ database và hiển thị ra trang</p>
+                                          </div>
+                                        </label>
+                                      </div>
+                                </td>
+                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                    <p class="fs-16 fw-700">10.000.000</p>
+                                </td>
+                                <td class="text-center p-20 vertical-middle">
+                                    <p class="fs-16 fw-700">15.000.000</p>
+                                </td>
+                            </tr>
+                            <!-- end row four -->
+                            <!-- row five -->
+                            <tr>
+                                <td class="py-20 pr-20">
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="check-4" class="checkbox-input" checked="">
+                                        <label for="check-4">
+                                          <div class="check">
+                                                <img src="./images/check.png" alt="" class="checkbox-icon">
+                                          </div>
+                                          <div class="checkbox-text">
+                                                <p class="checkbox-title fw-700 fs-16 mb-15">Lấy dữ liệu từ hệ thống cũ</p>
+                                                <p class="checkbox-des fs-16 text-gray-66">Cam kết lấy đầy đủ dữ liệu, media từ hệ thống cũ</p>
+                                          </div>
+                                        </label>
+                                      </div>
+                                </td>
+                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                    <p class="fs-16 fw-700">10.000.000</p>
+                                </td>
+                                <td class="text-center p-20 vertical-middle">
+                                    <p class="fs-16 fw-700">10.000.000</p>
+                                </td>
+                            </tr>
+                            <!-- end row five -->
+                            <!-- row six -->
+                            <tr>
+                                <td class="py-20 pr-20">
+                                    <div class="fs-20 fw-700 uppercase">
+                                        Tổng cộng
+                                    </div>
+                                </td>
+                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                    <p class="fs-16 fw-700">40.000.000</p>
+                                    <p class="fs-14 text-gray-66">VNĐ</p>
+                                </td>
+                                <td class="text-center p-20 vertical-middle">
+                                    <p class="fs-16 fw-700">60.000.000</p>
+                                    <p class="fs-14 text-gray-66">VNĐ</p>
+                                </td>
+                            </tr>
+                            <!-- end row six -->
+                            
+                          </table>
+                    </section>
+                    <!-- end secondary -->
+
+                    <!-- tertiary -->
+                    <section class="price-quote-tertiary">
+                        <!-- haeding -->
+                        <div class="d-2xl-flex items-center justify-between mb-24">
+                            <div class="left d-2xl-flex items-baseline">
+                                <h2 class="heading-primary fw-700 fs-36 lh-40 mr-30">CMS</h2>
+                                <span class="text-gray-66 fs-13">Chi phí hàng tháng</span>
+                            </div>
+                            <div class="right fs-20 d-2xl-flex items-center">
+                                <span>Xuất bản</span>
+                                <div class="range-container mx-10 js__rangeContainer">
+                                    <div class="range-slider js__rangeSlide">
+                                        <span class="rs-label js__rangeBullet">200</span>
+                                    </div>
+                                    <div class="range-popup js__rangePopup">
+                                        <input class="rs-range js__rangeLine" type="range" value="200" min="100" max="1000">
+                                        <div class="box-minmax">
+                                            <span>100</span><span>1000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span>bài/tháng</span>
+                            </div>
+                        </div>
+                        <!-- end heading -->
+                        <div class="line-1"></div>
+                        <!-- content -->
+                        <div class="mt-20">
+                            <div class="d-2xl-flex justify-between">
+                                <div class="text-left">
+                                    <h3 class="fw-700 mb-15">CMS sẽ được liên tục cập nhật và phát triển tính năng mới</h3>
+                                    <p class="text-gray-66 fs-16">Ngày chốt mức phí vào ngày cuối cùng của tháng. Mức phí: 3000 VNĐ/ bài</p>
+                                    <p class="text-gray-66 fs-16">Ngày phát hành hóa đơn: 3-5 ngày sau khi chốt chi phí (hạn thanh toán là 2 tuần)</p>
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="fw-700 mb-8">600.000</h3>
+                                    <p class="text-gray-66 fs-14">VNĐ/ tháng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-20">
+                            <p class="mb-15">Các tính năng hiện tại của CMS:</p>
+                            <div class="d-2xl-grid col-2">
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Quản trị hệ thống theo tiêu chuẩn báo trí</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Quản lý bình luận</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Bộ soạn thảo thông minh có AI hỗ trợ viết bài</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Quản lý tài khoản, phân quyền</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Thư viện hình ảnh được hỗ trợ AI và crop, watemark</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Quản lý quảng cáo: banner, adnetwork, html5 ...</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Thử viện video, audio tự động tối ưu dung lượng</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Quản lý chuyên mục, loại tin, chủ đề, sự kiện...</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Lấy bài báo bạn chỉ với 1 click</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Quản lý KPI, đánh giá độ hiệu quả của nhân sự</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Thống kê views chi tiết</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Tạo báo cáo thống kê chi tiết</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Công cụ tối ưu SEO cho phóng viên</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Cài đặt site: Logo, thông số SEO, code GA...</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Chấm nhuận bút đồng tác giả</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Hỗ trợ giao diện Dark Mode</p>
+                                </div>
+                                <div class="d-2xl-flex mt-10">
+                                    <div class="flex-0 mr-8 mt-4">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <p class="flex-1">Và còn nhiều tính năng được hỗ trợ sắp tới</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end content -->
+                    </section>
+                    <!-- end tertiary -->
+
+                    <!-- quaternary -->
+                    <section class="price-quote-quaternary">
+                         <!-- haeding -->
+                         <div class="d-2xl-flex items-center justify-between mb-24">
+                            <div class="left d-2xl-flex items-baseline">
+                                <h2 class="heading-primary fw-700 fs-36 lh-40 mr-30">Máy chủ</h2>
+                                <span class="text-gray-66 fs-13">Chi phí hàng tháng</span>
+                            </div>
+                            <div class="right fs-20 d-2xl-flex items-center">
+                                <div class="d-2xl-flex items-center mr-8">
+                                    <span>Dung lượng</span>
+                                    <div class="range-container mx-10 js__rangeContainer">
+                                        <div class="range-slider js__rangeSlide">
+                                            <span class="rs-label js__rangeBullet">200</span>
+                                        </div>
+                                        <div class="range-popup js__rangePopup">
+                                            <input class="rs-range js__rangeLine" type="range" value="200" min="30" max="1000">
+                                            <div class="box-minmax">
+                                                <span>30</span><span>1000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span>GB media.</span>
+                                </div>
+                                <div class="d-2xl-flex items-center">
+                                    <span>Xuất bản</span>
+                                    <div class="range-container mx-10 js__rangeContainer">
+                                        <div class="range-slider">
+                                            <span class="rs-label">200</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <span>bài/tháng</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heading -->
+                        <div class="line-1"></div>
+                        <!-- content -->
+                        <div class="">
+                            <div class="d-2xl-flex justify-between py-20">
+                                <div class="text-left">
+                                    <h3 class="mb-15">
+                                        <strong>Dung lượng lưu trữ Media </strong>
+                                        <span>(ảnh, video, file...)</span>
+                                    </h3>
+                                    <p class="text-gray-66 fs-16">Lưu trữ Storage với đĩa SSD tốc độ cao</p>
+                                    <p class="text-gray-66 fs-16">Đơn giá 2000 VNĐ/ GB dữ liệu</p>
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="fw-700 mb-10">600.000</h3>
+                                </div>
+                            </div>
+                            <div class="line-1"></div>
+                            <div class="d-2xl-flex justify-between py-20">
+                                <div class="text-left">
+                                    <h3 class="mb-15">
+                                        <strong>Cấu hình máy chủ</strong>
+                                    </h3>
+                                    <p class="text-gray-66 fs-16">Cấu hình máy chủ sẽ tăng/ giảm linh hoạt theo điều kiện sự dụng, đảm bảo luôn ổn định.</p>
+                                    <p class="text-gray-66 fs-16">Chi phí này sẽ được tính trên số bài xuất bài mỗi tháng: 1000 VNĐ/bài</p>
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="fw-700 mb-10">200.000</h3>
+                                </div>
+                            </div>
+                            <div class="line-1"></div>
+                            <div class="d-2xl-flex justify-between py-20">
+                                <div class="text-left">
+                                    <h3 class="mb-15">
+                                        <strong>Mạng phân phối nội dung CDN </strong>
+                                    </h3>
+                                    <p class="text-gray-66 fs-16">CDN sử dụng gói Pro của Cloudflare</p>
+                                    <p class="text-gray-66 fs-16">Phí cố định 600.000 VNĐ/tháng</p>
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="fw-700 mb-10">600.000</h3>
+                                </div>
+                            </div>
+                            <div class="line-1"></div>
+                            <div class="d-2xl-flex justify-between py-20">
+                                <div class="text-left">
+                                    <h3 class="mb-15">
+                                        <strong>Sao lưu dự liệu dự phòng</strong>
+                                    </h3>
+                                    <p class="text-gray-66 fs-16">Lưu trữ các file media, mã nguồn code và các file backup database</p>
+                                    <p class="text-gray-66 fs-16">Cold( data archive ): 800 VNĐ/GB</p>
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="fw-700 mb-10">160.000</h3>
+                                </div>
+                            </div>
+                            <div class="line-1"></div>
+                            <div class="d-2xl-flex justify-between pt-20 pb-40">
+                                <div class="text-left">
+                                    <h3 class="mb-15">
+                                        <strong>Chứng chỉ bảo mật SSL</strong>
+                                    </h3>
+                                    <p class="text-gray-66 fs-16">SSL cho domain chính và 01 subdomain CMS (cms.domain.com)</p>
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="fw-700 mb-10">150.000</h3>
+                                </div>
+                            </div>
+                            <div class="line-5"></div>
+                            <div class="d-2xl-flex justify-between py-20">
+                                <div class="text-left">
+                                    <div class="fs-20 fw-700 uppercase mb-20">
+                                        Tổng cộng
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="check-5" class="checkbox-input" checked="">
+                                        <label for="check-5">
+                                          <div class="check">
+                                                <img src="./images/check.png" alt="" class="checkbox-icon">
+                                          </div>
+                                          <div class="checkbox-text">
+                                                <p class="checkbox-title fs-16 mb-15">Chúng tôi đồng ý sử dụng máy chủ của Explus</p>
+                                          </div>
+                                        </label>
+                                    </div>
+                                    <div class="mt-20">
+                                        <p class="mb-15">Explus cam kết:</p>
+                                        <div class="">
+                                            <div class="d-2xl-flex mt-10">
+                                                <div class="flex-0 mr-8 mt-4">
+                                                    <img src="./images/check.png" alt="">
+                                                </div>
+                                                <p class="flex-1">Hệ thống luôn đảm bảo hoạt động uptime tối thiểu 99.996%</p>
+                                            </div>
+                                            <div class="d-2xl-flex mt-10">
+                                                <div class="flex-0 mr-8 mt-4">
+                                                    <img src="./images/check.png" alt="">
+                                                </div>
+                                                <p class="flex-1">Công nghệ bảo mật tiên tiến nhất</p>
+                                            </div>
+                                            <div class="d-2xl-flex mt-10">
+                                                <div class="flex-0 mr-8 mt-4">
+                                                    <img src="./images/check.png" alt="">
+                                                </div>
+                                                <p class="flex-1">Chịu được tấn công ddos lên đến 100.000 request đồng thời (CCU)</p>
+                                            </div>
+                                            <div class="d-2xl-flex mt-10">
+                                                <div class="flex-0 mr-8 mt-4">
+                                                    <img src="./images/check.png" alt="">
+                                                </div>
+                                                <p class="flex-1">Traffic tự nhiên có thể lên đến 200.000 realtime (theo GA4)</p>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="fw-700 fs-20">1.710.000</h3>
+                                    <p class="text-gray-66 fs-14">VNĐ/ tháng</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end content -->
+                    </section>
+                    <!-- end quaternary -->
+                </div>
+                <!-- end page -->
+            </div>
+            <!-- end price quote -->
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer id="footer" class="footer w-wrapper">
+            <div class="w-1140">
+                <div class="footer-logo d-2xl-flex justify-center">
+                    <a href="#"
+                        ><img src="./images/icon/logo_2.png" alt=""
+                    /></a>
+                </div>
+                <div class="footer-line my-20"></div>
+                <div class="footer-text">
+                    <p class="mb-4">
+                        CÔNG TY TNHH CÔNG NGHỆ TRUYỀN THÔNG EXPLUS
+                    </p>
+                    <p class="mb-4">
+                        Số 93 Sunrise A, The Manor Central Park, Đại Kim, Hoàng
+                        Mai, Hà Nội [<a href="#" class="text-link">chỉ đường</a
+                        >]
+                    </p>
+                    <a href="#">Zalo: 0967.36.1518</a>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <script src="./lib/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

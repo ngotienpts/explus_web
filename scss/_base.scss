@@ -323,6 +323,9 @@ img {
 .text-gray-51 {
     color: #515154;
 }
+.text-gray-66 {
+    color: #666;
+}
 
 /*=================================================================*/
 .bg-white {
@@ -333,6 +336,9 @@ img {
 }
 .bg-transparent {
     background-color: transparent;
+}
+.bg-blue-008 {
+    background-color: rgba($color: #0071e3, $alpha: 0.08);
 }
 
 /*=================================================================*/
@@ -975,9 +981,15 @@ img {
 .text-justify {
     text-align: justify;
 }
+.vertical-middle {
+    vertical-align: middle;
+}
 /*=================================================================*/
 .items-center {
     align-items: center;
+}
+.items-baseline {
+    align-items: baseline;
 }
 .justify-between {
     justify-content: space-between;
@@ -997,6 +1009,9 @@ img {
 }
 .flex-1 {
     flex: 1;
+}
+.flex-col {
+    flex-direction: column;
 }
 /*=================================================================*/
 .col-2 {

@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // active
     var activeScrolls = document.querySelectorAll(".js__activeContainer");
 
+    // range
+    var rangeContainers = document.querySelectorAll(".js__rangeContainer");
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
@@ -59,6 +62,31 @@ document.addEventListener("DOMContentLoaded", function () {
                             }
                         };
                     });
+                });
+            }
+
+            // range
+            if (rangeContainers) {
+                rangeContainers.forEach((rangeContainer) => {
+                    var rangeLine =
+                        rangeContainer.querySelector(".js__rangeLine");
+                    var rangeBullet =
+                        rangeContainer.querySelector(".js__rangeBullet");
+
+                    var rangeSlide =
+                        rangeContainer.querySelector(".js__rangeSlide");
+                    var rangePopup =
+                        rangeContainer.querySelector(".js__rangePopup");
+
+                    rangeSlide.onclick = function () {
+                        rangePopup.classList.toggle("active");
+                    };
+
+                    rangeLine.addEventListener("input", showSliderValue, false);
+
+                    function showSliderValue() {
+                        rangeBullet.innerHTML = rangeLine.value;
+                    }
                 });
             }
         },
