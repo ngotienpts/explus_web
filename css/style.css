@@ -1862,6 +1862,11 @@ img {
   width: 300px;
 }
 
+.price-quote {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .price-quote-secondary {
   padding-top: 56px;
 }
@@ -1909,6 +1914,7 @@ img {
 }
 
 .col-active {
+  cursor: pointer;
   transition: background-color 0.5s ease;
 }
 .col-active:hover {
