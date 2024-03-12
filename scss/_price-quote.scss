@@ -1,13 +1,19 @@
-.price-quote {
-    padding: 58px 0;
+.pt-58 {
+    padding-top: 58px;
 }
 .page {
     padding-top: 86px;
+    width: 1080px;
 }
 .line-1 {
     width: 100%;
     height: 1px;
     background-color: #b9b9b9;
+}
+.line-1-30 {
+    width: 320px;
+    height: 1px;
+    background-color: #000;
 }
 .line-5 {
     width: 100%;
@@ -61,7 +67,9 @@
     background-color: #d9d9d9;
     border: 1px solid transparent;
 }
-
+.checkbox-des {
+    max-width: 643px;
+}
 .range-container {
     position: relative;
 }
@@ -101,7 +109,7 @@
 .range-slider {
     background-color: #e8e8e8;
     padding: 8px 20px;
-    width: 98px;
+    width: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,4 +140,84 @@
 
 .price-quote-quaternary {
     padding-top: 56px;
+}
+.price-quote-quinary {
+    padding-top: 56px;
+}
+
+.price-quote-senary {
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    .btn-primary {
+        width: 194px;
+        height: 54px;
+        font-size: 20px;
+    }
+    .link {
+        border-bottom: 1px solid #000;
+        &:hover {
+            color: red;
+            border-color: red;
+        }
+    }
+}
+.col-active {
+    transition: background-color 0.5s ease;
+    &:hover {
+        background-color: rgba($color: #0071e3, $alpha: 0.08);
+    }
+}
+.col-active.active {
+    background-color: rgba($color: #0071e3, $alpha: 0.08);
+    animation: slideIn 0.5s forwards;
+}
+@keyframes slideIn {
+    from {
+        background-position: left;
+    }
+    to {
+        background-position: right;
+    }
+}
+@media print {
+    body {
+        visibility: hidden;
+    }
+    .pt-58 {
+        display: none;
+    }
+    .print {
+        visibility: visible;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact; /* Standard syntax */
+    }
+    .page {
+        padding-top: 86px;
+        width: 1080px;
+    }
+    .line-1 {
+        width: 100%;
+        // height: 1px;
+        // background-color: #b9b9b9;
+        border-bottom: 1px solid #b9b9b9;
+    }
+    .line-1-30 {
+        width: 320px;
+        // height: 1px;
+        // background-color: #000;
+        border-bottom: 1px solid #000;
+    }
+    .line-5 {
+        width: 100%;
+        // height: 5px;
+        // background-color: #b9b9b9;
+        border-bottom: 5px solid #b9b9b9;
+    }
+    // .checked-parent:not(.checked) {
+    //     display: none;
+    // }
+    .col-active.active {
+        background-color: rgba($color: #0071e3, $alpha: 0.08);
+    }
 }

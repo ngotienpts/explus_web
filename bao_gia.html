@@ -23,7 +23,12 @@
         <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/responsive.css" />
+        
         <script src="./lib/jquery/jquery.js"></script>
+        <!-- <style>
+            body {visibility:hidden;}
+            .print {visibility:visible;}
+        </style> -->
     </head>
 
     <body>
@@ -202,10 +207,11 @@
         <!-- end mb -->
         <!-- main -->
         <main id="main" class="main">
+            <div class="pt-58"></div>
             <!-- price quote -->
             <div class="price-quote">
                 <!-- page -->
-                <div class="page w-1140">
+                <div class="page w-1140 print">
                     <!-- primary -->
                     <section class="price-quote-primary">
                         <!-- top -->
@@ -272,23 +278,23 @@
                     <section class="price-quote-secondary">
                         <table>
                             <!-- row one -->
-                            <tr class="">
+                            <tr class=>
                               <th class="text-left pb-20 pr-20">
                                 <h2 class="heading-primary fw-700 fs-36 lh-40 mb-12">Giao diện & Dữ liệu</h2>
                                 <p class="fs-13 text-gray-66">Thời gian triển khai: 02-06 tuần. Thanh toán 50% khi ký hợp đồng và 50% còn lại khi ký nghiệm thu.</p>
                               </th>
-                              <th class="text-center p-20 bg-blue-008">
+                              <th class="text-center p-20 col-active js__basicActive active">
                                 <h3 class="fs-24">Gói cơ bản</h3>
                                 <p class="fs-13 text-gray-66">Bao gồm: trang chủ, trang mục, trang chi tiết, search, tag.</p>
                               </th>
-                              <th class="text-center p-20">
+                              <th class="text-center p-20 col-active js__advancedActive">
                                 <h3 class="fs-24">Gói nâng cao</h3>
                                 <p class="fs-13 text-gray-66">Bao gồm: gói cơ bản + trang Photo, Video, eMagazine, Longform.</p>
                               </th>
                             </tr>
                             <!-- end row one -->
                             <!-- row two -->
-                            <tr>
+                            <tr class="checked-parent">
                                 <td class="py-20 pr-20">
                                     <div class="checkbox-group">
                                         <input type="checkbox" id="check-1" class="checkbox-input" checked="">
@@ -303,16 +309,16 @@
                                         </label>
                                       </div>
                                 </td>
-                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                <td class="text-center vertical-middle p-20 col-active js__basicActive active">
                                     <p class="fs-16 fw-700">20.000.000</p>
                                 </td>
-                                <td class="text-center p-20 vertical-middle">
+                                <td class="text-center p-20 vertical-middle  col-active js__advancedActive">
                                     <p class="fs-16 fw-700">30.000.000</p>
                                 </td>
                             </tr>
                             <!-- end row two -->
                             <!-- row three -->
-                            <tr>
+                            <tr class="checked-parent">
                                 <td class="py-20 pr-20">
                                     <div class="checkbox-group">
                                         <input type="checkbox" id="check-2" class="checkbox-input" checked="">
@@ -327,16 +333,16 @@
                                         </label>
                                       </div>
                                 </td>
-                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                <td class="text-center vertical-middle p-20 col-active js__basicActive active">
                                     <p class="fs-16 fw-700">10.000.000</p>
                                 </td>
-                                <td class="text-center p-20 vertical-middle">
+                                <td class="text-center p-20 vertical-middle  col-active js__advancedActive">
                                     <p class="fs-16 fw-700">15.000.000</p>
                                 </td>
                             </tr>
                             <!-- end row three -->
                             <!-- row four -->
-                            <tr>
+                            <tr class="checked-parent">
                                 <td class="py-20 pr-20">
                                     <div class="checkbox-group">
                                         <input type="checkbox" id="check-3" class="checkbox-input" checked="">
@@ -351,19 +357,19 @@
                                         </label>
                                       </div>
                                 </td>
-                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                <td class="text-center vertical-middle p-20 col-active js__basicActive active">
                                     <p class="fs-16 fw-700">10.000.000</p>
                                 </td>
-                                <td class="text-center p-20 vertical-middle">
+                                <td class="text-center p-20 vertical-middle  col-active js__advancedActive">
                                     <p class="fs-16 fw-700">15.000.000</p>
                                 </td>
                             </tr>
                             <!-- end row four -->
                             <!-- row five -->
-                            <tr>
+                            <tr class="checked-parent">
                                 <td class="py-20 pr-20">
                                     <div class="checkbox-group">
-                                        <input type="checkbox" id="check-4" class="checkbox-input" checked="">
+                                        <input type="checkbox" id="check-4" class="checkbox-input">
                                         <label for="check-4">
                                           <div class="check">
                                                 <img src="./images/check.png" alt="" class="checkbox-icon">
@@ -375,26 +381,26 @@
                                         </label>
                                       </div>
                                 </td>
-                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                <td class="text-center vertical-middle p-20 col-active js__basicActive active">
                                     <p class="fs-16 fw-700">10.000.000</p>
                                 </td>
-                                <td class="text-center p-20 vertical-middle">
+                                <td class="text-center p-20 vertical-middle  col-active js__advancedActive">
                                     <p class="fs-16 fw-700">10.000.000</p>
                                 </td>
                             </tr>
                             <!-- end row five -->
                             <!-- row six -->
-                            <tr>
+                            <tr class="">
                                 <td class="py-20 pr-20">
                                     <div class="fs-20 fw-700 uppercase">
                                         Tổng cộng
                                     </div>
                                 </td>
-                                <td class="text-center vertical-middle p-20 bg-blue-008">
+                                <td class="text-center vertical-middle p-20 col-active js__basicActive active">
                                     <p class="fs-16 fw-700">40.000.000</p>
                                     <p class="fs-14 text-gray-66">VNĐ</p>
                                 </td>
-                                <td class="text-center p-20 vertical-middle">
+                                <td class="text-center p-20 vertical-middle  col-active js__advancedActive">
                                     <p class="fs-16 fw-700">60.000.000</p>
                                     <p class="fs-14 text-gray-66">VNĐ</p>
                                 </td>
@@ -649,7 +655,7 @@
                                 </div>
                             </div>
                             <div class="line-1"></div>
-                            <div class="d-2xl-flex justify-between pt-20 pb-40">
+                            <div class="d-2xl-flex justify-between py-20">
                                 <div class="text-left">
                                     <h3 class="mb-15">
                                         <strong>Chứng chỉ bảo mật SSL</strong>
@@ -662,12 +668,12 @@
                             </div>
                             <div class="line-5"></div>
                             <div class="d-2xl-flex justify-between py-20">
-                                <div class="text-left">
+                                <div class="text-left js__checkShowCommitContainer">
                                     <div class="fs-20 fw-700 uppercase mb-20">
                                         Tổng cộng
                                     </div>
-                                    <div class="checkbox-group">
-                                        <input type="checkbox" id="check-5" class="checkbox-input" checked="">
+                                    <div class="checkbox-group checked-parent">
+                                        <input type="checkbox" id="check-5" class="checkbox-input js__checkShowCommit" checked>
                                         <label for="check-5">
                                           <div class="check">
                                                 <img src="./images/check.png" alt="" class="checkbox-icon">
@@ -677,7 +683,7 @@
                                           </div>
                                         </label>
                                     </div>
-                                    <div class="mt-20">
+                                    <div class="mt-20 js__showCommit">
                                         <p class="mb-15">Explus cam kết:</p>
                                         <div class="">
                                             <div class="d-2xl-flex mt-10">
@@ -719,8 +725,159 @@
                         <!-- end content -->
                     </section>
                     <!-- end quaternary -->
+
+                    <!-- quinary -->
+                    <section class="price-quote-quinary">
+                        <!-- haeding -->
+                        <div class="d-2xl-flex items-center justify-between mb-24">
+                            <div class="left d-2xl-flex items-baseline">
+                                <h2 class="heading-primary fw-700 fs-36 lh-40 mr-30">Dịch vụ hỗ trợ nâng cao</h2>
+                                <span class="text-gray-66 fs-13">Chi phí hàng tháng</span>
+                            </div>
+                        </div>
+                        <!-- end heading -->
+                        <div class="line-1"></div>
+                        <!-- content -->
+                        <div class="">
+                            <div class="checked-parent">
+                                <div class="d-2xl-flex justify-between py-20">
+                                    <div class="text-left">
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="check-6" class="checkbox-input" checked="">
+                                            <label for="check-6">
+                                              <div class="check">
+                                                    <img src="./images/check.png" alt="" class="checkbox-icon">
+                                              </div>
+                                              <div class="checkbox-text">
+                                                    <p class="checkbox-title fw-700 fs-16 mb-15">Tối ưu PageSpeed Insights</p>
+                                                    <p class="checkbox-des fs-16 text-gray-66">Đây là chỉ số rất quan trọng cho SEO, cải thiện trải nghiệm cho người dùng</p>
+                                                    <p class="checkbox-des fs-16 text-gray-66">Chuyên gia tối ưu sẽ liên tục kiểm tra và tối ưu để đạt điểm số cao nhất</p>
+                                              </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <h3 class="fw-700 mb-10">800.000</h3>
+                                    </div>
+                                </div>
+                                <div class="line-1"></div>
+                            </div>
+                            <div class="checked-parent">
+                                <div class="d-2xl-flex justify-between py-20">
+                                    <div class="text-left">
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="check-7" class="checkbox-input" checked="">
+                                            <label for="check-7">
+                                              <div class="check">
+                                                    <img src="./images/check.png" alt="" class="checkbox-icon">
+                                              </div>
+                                              <div class="checkbox-text">
+                                                    <p class="checkbox-title fs-16 mb-15">
+                                                        <strong>Kiểm tra lập chỉ mục</strong>
+                                                        <span>(Google Search Consolog)</span>
+                                                    </p>
+                                                    <p class="checkbox-des fs-16 text-gray-66">Kiểm tra lập chỉ mục website rất quan trọng để website hiển thị trên Google và tối ưu hiệu quả SEO</p>
+                                              </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <h3 class="fw-700 mb-10">800.000</h3>
+                                    </div>
+                                </div>
+                                <div class="line-1"></div>
+                            </div>
+                            <div class="checked-parent">
+                                <div class="d-2xl-flex justify-between py-20">
+                                    <div class="text-left">
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="check-8" class="checkbox-input" checked="">
+                                            <label for="check-8">
+                                                <div class="check">
+                                                        <img src="./images/check.png" alt="" class="checkbox-icon">
+                                                </div>
+                                                <div class="checkbox-text">
+                                                    <p class="checkbox-title fs-16 mb-15">
+                                                        <strong>Kiểm tra chỉ số trải nghiệm</strong>
+                                                        <span>(Google Search Consolog)</span>
+                                                    </p>
+                                                    <p class="checkbox-des fs-16 text-gray-66">Kiểm tra, theo dõi và cải thiện trải nghiệm của người dùng trên website (tốc độ tải trang, tính tương tác, độ ổn định) để nâng cao thứ hạng SEO</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <h3 class="fw-700 mb-10">800.000</h3>
+                                    </div>
+                                </div>
+                                <div class="line-1"></div>
+                            </div>
+                            <div class="checked-parent">
+                                <div class="d-2xl-flex justify-between py-20">
+                                    <div class="text-left">
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="check-9" class="checkbox-input" checked="">
+                                            <label for="check-9">
+                                              <div class="check">
+                                                    <img src="./images/check.png" alt="" class="checkbox-icon">
+                                              </div>
+                                              <div class="checkbox-text">
+                                                    <p class="checkbox-title fw-700 fs-16 mb-15">Chỉnh sửa website</p>
+                                                    <p class="checkbox-des fs-16 text-gray-66">Trong quá trình vận hành, nhu cầu người dùng thay đổi. Vậy nên ta cần cập nhật, cải tiến website để đáp ứng tốt hơn cho tòa soạn và độc giả</p>
+                                              </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <h3 class="fw-700 mb-10">800.000</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line-5"></div>
+                            <div class="d-2xl-flex justify-between py-20">
+                                <div class="text-left">
+                                    <div class="fs-20 fw-700 uppercase mb-20">
+                                        Tổng cộng
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="fw-700 fs-20">3.200.000</h3>
+                                    <p class="text-gray-66 fs-14">VNĐ/ tháng</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mt-40">
+                            <h3 class="fw-700 mb-10">Ghi chú:</h3>
+                            <p>Chi phí trên chưa bao gồm 10% VAT</p>
+                            <p>Hiệu lực bảng báo giá: 03 tháng</p>
+                        </div>
+                        <div class="mt-30">
+                            <h3 class="fw-700 mb-10">Điều khoản dịch vụ:</h3>
+                            <p>1. Giao diện website (front-end) được Explus bảo hành & bảo trì trong suốt quá trình hoạt động</p>
+                            <p>2. Giao diện dữ liệu thuộc quyền sở hữu của Quý khách hàng, Explus cam kết không sử dụng vào mục đích riêng nếu không được sự đồng ý của khách hàng</p>
+                            <p>3. CMS thuộc quyền sử dụng của Quý khách hàng, Explus sẽ bàn giao các tài khoản quản trị CMS</p>
+                            <p>4. Quý khách hàng ủy quyền cho Explus truy cập quản lý tên miền, truy cập máy chủ cũ để lấy dữ liệu (nếu có)</p>
+                        </div>
+                        <div class="mt-30">
+                            <h3 class="fw-700 mb-10 uppercase">Đại diện công ty:</h3>
+                            <div class="pb-40 mb-40"></div>
+                            <div class="line-1-30"></div>
+                        </div>
+                        <!-- end content -->
+                    </section>
+                    <!-- end quinary -->
+
                 </div>
                 <!-- end page -->
+                <!-- senary -->
+                <section class="price-quote-senary">
+                    <div class="text-center d-2xl-flex items-center justify-center flex-col">
+                        <button value='Print' class="btn btn-primary mb-30" onclick="window.print()">In báo giá</button>
+                        <a href="#" class="link">Liên hệ ngay để được tư vấn cụ thể hơn</a>
+                    </div>
+                </section>
+                <!-- end senary -->
             </div>
             <!-- end price quote -->
         </main>

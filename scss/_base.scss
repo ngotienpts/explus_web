@@ -206,6 +206,9 @@ img {
     color: #fff;
     outline: none;
     transition: all 0.2s ease;
+    &:hover {
+        background-color: #024180;
+    }
 }
 
 /*===========================================================================*/

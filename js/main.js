@@ -18,6 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // range
     var rangeContainers = document.querySelectorAll(".js__rangeContainer");
 
+    // check show commit
+    var checkShowCommitContainer = document.querySelector(
+        ".js__checkShowCommitContainer"
+    );
+
+    // check input
+    // var checkedInputs = document.querySelectorAll(".checkbox-input");
+
+    // change active
+    var basicActives = document.querySelectorAll(".js__basicActive");
+    var advancedActives = document.querySelectorAll(".js__advancedActive");
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
@@ -78,15 +90,97 @@ document.addEventListener("DOMContentLoaded", function () {
                     var rangePopup =
                         rangeContainer.querySelector(".js__rangePopup");
 
-                    rangeSlide.onclick = function () {
-                        rangePopup.classList.toggle("active");
-                    };
+                    if (rangeSlide != null) {
+                        rangeSlide.onclick = function () {
+                            rangePopup.classList.toggle("active");
+                        };
+                    }
 
-                    rangeLine.addEventListener("input", showSliderValue, false);
+                    if (rangeLine != null) {
+                        rangeLine.addEventListener(
+                            "input",
+                            showSliderValue,
+                            false
+                        );
+                    }
 
                     function showSliderValue() {
                         rangeBullet.innerHTML = rangeLine.value;
                     }
+                });
+            }
+
+            // check show commit
+            if (checkShowCommitContainer) {
+                var checkShowCommit = checkShowCommitContainer.querySelector(
+                    ".js__checkShowCommit"
+                );
+                var showCommit =
+                    checkShowCommitContainer.querySelector(".js__showCommit");
+
+                checkShowCommit.onclick = function (e) {
+                    if (this.checked) {
+                        showCommit.style.display = "block";
+                    } else {
+                        showCommit.style.display = "none";
+                    }
+                };
+            }
+
+            // checked input
+            // if (checkedInputs) {
+            //     checkedInputs.forEach((checkedInput) => {
+            //         if (checkedInput.checked) {
+            //             checkedInput
+            //                 .closest(".checked-parent")
+            //                 .classList.add("checked");
+            //         } else {
+            //             checkedInput
+            //                 .closest(".checked-parent")
+            //                 .classList.remove("checked");
+            //         }
+            //         checkedInput.onclick = function (e) {
+            //             this.closest(".checked-parent").classList.toggle(
+            //                 "checked"
+            //             );
+            //             if (checkShowCommitContainer) {
+            //                 var showCommit =
+            //                     checkShowCommitContainer.querySelector(
+            //                         ".js__showCommit"
+            //                     );
+
+            //                 if (this.checked) {
+            //                     showCommit.style.display = "block";
+            //                 } else {
+            //                     showCommit.style.display = "none";
+            //                 }
+            //             }
+            //         };
+            //     });
+            // }
+
+            // change active
+            if (basicActives && advancedActives) {
+                basicActives.forEach((basicActive) => {
+                    basicActive.onclick = function () {
+                        advancedActives.forEach((advancedActive) => {
+                            advancedActive.classList.remove("active");
+                        });
+                        basicActives.forEach((ba) => {
+                            ba.classList.add("active");
+                        });
+                    };
+                });
+
+                advancedActives.forEach((advancedActive) => {
+                    advancedActive.onclick = function () {
+                        basicActives.forEach((basicActive) => {
+                            basicActive.classList.remove("active");
+                        });
+                        advancedActives.forEach((aa) => {
+                            aa.classList.add("active");
+                        });
+                    };
                 });
             }
         },
@@ -94,16 +188,10 @@ document.addEventListener("DOMContentLoaded", function () {
         sliderThreeItems: function () {
             threeSlides.forEach((item) => {
                 var slider = item.querySelector(".js__swiperThreeItems");
-                // var next = item.querySelector(".swiper-button-next");
-                // var prev = item.querySelector(".swiper-button-prev");
                 new Swiper(slider, {
                     slidesPerView: 1.5,
                     spaceBetween: 10,
                     slidesPerGroup: 1,
-                    // navigation: {
-                    //     nextEl: next || null,
-                    //     prevEl: prev || null,
-                    // },
                     breakpoints: {
                         768: {
                             slidesPerView: 2,
