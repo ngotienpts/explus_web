@@ -1529,6 +1529,20 @@ img {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
+.header.whiteActive {
+  background-color: rgba(255, 255, 255, 0.72);
+  color: #000;
+}
+.header.whiteActive .navbar-link.active {
+  color: #000;
+}
+.header.whiteActive .navbar-link:hover {
+  color: #000;
+}
+.header.blackActive {
+  background-color: rgba(0, 0, 0, 0.72);
+  color: #fff;
+}
 .header-mb {
   position: fixed;
   top: 0;
@@ -1538,7 +1552,35 @@ img {
   padding: 10px;
   z-index: 1000;
   transition: background 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.72);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.header-mb.whiteActive {
+  background-color: rgba(255, 255, 255, 0.72);
+  color: #000;
+}
+.header-mb.whiteActive ~ .sub-menu {
+  background-color: rgba(255, 255, 255, 0.72);
+}
+.header-mb.whiteActive ~ .sub-menu .text-white {
+  color: #000;
+}
+.header-mb.whiteActive ~ .sub-menu .sub-menu__heading {
+  border-bottom: 1px solid #000;
+}
+.header-mb.whiteActive ~ .sub-menu .sub-menu__headingClose {
+  border: 1px solid #000;
+}
+.header-mb.whiteActive ~ .sub-menu .navbar-link.active {
+  color: #000;
+}
+.header-mb.whiteActive ~ .sub-menu .navbar-link:hover {
+  color: #000;
+}
+.header-mb.blackActive {
+  background-color: rgba(0, 0, 0, 0.72);
+  color: #fff;
 }
 .header-mb__leftIcon {
   padding: 10px;
@@ -1611,7 +1653,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 1002;
   background-color: rgba(0, 0, 0, 0.72);
   width: 50%;
   color: #fff;

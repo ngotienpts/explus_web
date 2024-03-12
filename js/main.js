@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var bodyEle = document.querySelector("body");
 
     // header
-    var header = document.querySelector(".js__header");
+    var headers = document.querySelectorAll(".js__header");
+    const boxes = document.querySelectorAll(".js__box");
+    // const colors = ["rgba(0,0,0,0.72)", "rgba(255,255,255,0.72)"];
+    const colors = ["blackActive", "whiteActive"];
 
     // sub menu
     const subMenus = document.querySelectorAll(".js__subMenuContainer");
@@ -38,10 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // submenu
             if (subMenus) {
                 subMenus.forEach((subMenu) => {
-                    var menu = subMenu.querySelector(".js__subMenu");
-                    var showSubMenu = subMenu.querySelector(".js__showSubMenu");
+                    var menu = document.querySelector(".js__subMenu");
+                    var showSubMenu =
+                        document.querySelector(".js__showSubMenu");
                     var closeSubMenu =
-                        subMenu.querySelector(".js__closeSubMenu");
+                        document.querySelector(".js__closeSubMenu");
 
                     showSubMenu.onclick = function () {
                         menu.classList.add("active");
@@ -213,13 +217,21 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollFunc: function () {
             const scrollY = window.scrollY;
 
-            if (header) {
-                const isSticky = scrollY > 50;
-                if (isSticky !== this.isSticky) {
-                    header.classList.toggle("sticky", isSticky);
-                    this.isSticky = isSticky;
+            let currentColor = null;
+
+            headers.forEach((header) => {
+                boxes.forEach(function (box, index) {
+                    const boxTop = box.getBoundingClientRect().top;
+                    if (boxTop <= header.clientHeight) {
+                        currentColor = colors[index % 2];
+                    }
+                });
+
+                if (currentColor) {
+                    header.classList.remove("blackActive", "whiteActive");
+                    header.classList.add(currentColor);
                 }
-            }
+            });
         },
 
         // window scroll
