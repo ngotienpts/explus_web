@@ -35,7 +35,7 @@
         <!-- header -->
         <header
             id="header"
-            class="header w-wrapper relative js__header d-lg-none"
+            class="header sticky w-wrapper relative js__header d-lg-none text-white"
         >
             <!-- pc -->
             <div
@@ -44,11 +44,24 @@
                 <!-- logo -->
                 <div class="logo flex-0">
                     <a href="#" class="logo-link">
-                        <img
+                        <!-- <img
                             src="./images/icon/logo.svg"
                             class="logo-img"
                             alt=""
-                        />
+                        /> -->
+                        <div class="logo-img">
+                            <svg width="101" height="32" viewBox="0 0 101 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.2797 25.9578H59.2417V3.62207H64.2797V25.9578Z" fill="currentColor"/>
+                                <path d="M82.1148 25.9418H74.024C71.6521 25.9418 69.9337 25.4536 68.8669 24.4763C67.77 23.4999 67.2225 21.9296 67.2225 19.7672V9.37695H72.0384V19.4233C72.0384 20.3805 72.1865 20.9937 72.4829 21.262C72.739 21.5513 73.3575 21.6967 74.3353 21.6967H77.2688V9.37695H82.1148V25.9418Z" fill="currentColor"/>
+                                <path d="M100.705 20.5898C100.705 22.1449 100.27 23.4208 99.4009 24.4173C98.5311 25.4338 97.4152 25.9423 96.0521 25.9423H85.115L85.0999 21.906H94.1103C94.7419 21.906 95.2314 21.7809 95.5767 21.5318C95.8248 21.3724 95.9479 21.098 95.9479 20.7097C95.9479 20.3002 95.8248 20.0068 95.5767 19.8273C95.3105 19.6578 94.822 19.5731 94.1103 19.5731H90.5685C88.3846 19.5731 86.8883 19.212 86.0787 18.4889C85.2681 17.7668 84.8627 16.5081 84.8627 14.7138C84.8627 12.851 85.3472 11.4995 86.3159 10.6624C87.2247 9.8152 88.6808 9.3916 90.6876 9.3916H99.8902V13.4279H92.2728C91.136 13.4279 90.4304 13.5177 90.1542 13.6982C89.9459 13.797 89.8419 14.0512 89.8419 14.4596C89.8419 14.8288 89.9309 15.0981 90.1091 15.2675C90.3954 15.447 90.8208 15.5368 91.3841 15.5368H95.0882C96.8867 15.5368 98.2599 15.9755 99.2077 16.852C100.205 17.6891 100.705 18.9357 100.705 20.5898Z" fill="currentColor"/>
+                                <path d="M20.5792 25.8885H11.5766C9.66904 25.8885 8.16679 25.7464 7.06688 25.4619C5.94494 25.1887 4.86205 24.6782 3.81918 23.9339C2.54111 22.9919 1.58632 21.8109 0.958797 20.3899C0.319266 18.9577 0 17.2573 0 15.2875C0 11.4348 0.952793 8.57751 2.86037 6.71468C4.74495 4.86193 7.6944 3.93506 11.7117 3.93506H20.5792V7.77063H11.8118C10.1404 7.77063 8.8894 8.12364 8.05969 8.82864C7.207 9.54572 6.18614 11.3672 6.05103 12.7187L20.5792 12.7489V16.8498H6.10608C6.10608 17.585 6.46639 18.8377 6.67955 19.4065C6.8587 19.9652 7.33009 20.4162 7.72343 20.759C8.54211 21.5044 9.90424 21.8766 11.8118 21.8766H20.5792V25.8885Z" fill="currentColor"/>
+                                <path d="M21.4852 9.53906H26.8226L30.2005 14.3297L40.9184 0H46.1727L30.4096 21.3483L21.4852 9.53906Z" fill="currentColor"/>
+                                <path d="M27.4559 18.1123L21.6182 25.8874H26.9976L30.0411 21.7683L27.4559 18.1123Z" fill="currentColor"/>
+                                <path d="M33.3149 18.1123L39.1527 25.8874H33.7733L30.7297 21.7683L33.3149 18.1123Z" fill="currentColor"/>
+                                <path d="M40.5322 9.52832H49.1954V12.901H44.7858V22.6084H48.9773C48.9773 22.6084 52.5424 22.0728 52.5733 17.5656H57.0772C57.0772 17.5656 57.7966 24.5309 50.9159 25.9801H44.8479V32.0002H40.5322V9.52832Z" fill="currentColor"/>
+                                <path d="M58 11.025H55.2637V8.26758H52.8868V11.025H50.1497V13.4203H52.8868V16.1778H55.2637V13.4203H58V11.025Z" fill="currentColor"/>
+                                </svg>
+                        </div>
                     </a>
                 </div>
                 <!-- end logo -->
@@ -109,92 +122,40 @@
         <!-- end header -->
         <!-- mb -->
         <div
-            class="header-mb w-wrapper d-2xl-none d-lg-flex items-center justify-between"
+            class="header-mb w-wrapper d-2xl-none d-lg-flex items-center text-white js__header justify-between"
         >
             <!-- left -->
             <div class="header-mb__left js__subMenuContainer">
                 <!-- icon -->
                 <div class="header-mb__leftIcon js__showSubMenu">
-                    <img src="./images/icon/bars-solid.svg" alt="" />
+                    <!-- <img src="./images/icon/bars-solid.svg" alt="" /> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path opacity="1" fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
                 </div>
                 <!-- end icon -->
-                <!-- content -->
-                <div class="sub-menu js__subMenu">
-                    <div
-                        class="sub-menu__heading d-2xl-flex items-center justify-between"
-                    >
-                        <h3 class="text-white fs-32">Menu</h3>
-                        <div
-                            class="sub-menu__headingClose flex-0 p-10 js__closeSubMenu"
-                        >
-                            <img src="./images/icon/close.svg" alt="" />
-                        </div>
-                    </div>
-                    <!-- list -->
-                    <ul class="sub-menu__list js__activeContainer">
-                        <li class="sub-menu__item">
-                            <a
-                                href="#el-2"
-                                class="navbar-link active js__activeElement"
-                                >Với phóng viên</a
-                            >
-                        </li>
-                        <li class="sub-menu__item">
-                            <a
-                                href="#el-3"
-                                class="navbar-link js__activeElement"
-                                >Người xuất bản</a
-                            >
-                        </li>
-                        <li class="sub-menu__item">
-                            <a
-                                href="#el-4"
-                                class="navbar-link js__activeElement"
-                                >Quản trị viên</a
-                            >
-                        </li>
-                        <li class="sub-menu__item">
-                            <a
-                                href="#el-5"
-                                class="navbar-link js__activeElement"
-                                >SEO</a
-                            >
-                        </li>
-                        <li class="sub-menu__item">
-                            <a
-                                href="#el-6"
-                                class="navbar-link js__activeElement"
-                                >Với độc giả</a
-                            >
-                        </li>
-                        <li class="sub-menu__item">
-                            <a
-                                href="#el-7"
-                                class="navbar-link js__activeElement"
-                                >Bảo mật</a
-                            >
-                        </li>
-                        <li class="sub-menu__item">
-                            <a
-                                href="#el-8"
-                                class="navbar-link js__activeElement"
-                                >Khách hàng</a
-                            >
-                        </li>
-                    </ul>
-                    <!-- end list -->
-                </div>
-                <!-- end content -->
+                
             </div>
             <!-- end left -->
             <!-- center -->
             <div class="header-mb__center">
                 <a href="#">
-                    <img
+                    <!-- <img
                         src="./images/icon/logo.svg"
                         alt=""
                         class="header-mb__centerLogo"
-                    />
+                    /> -->
+                    <div class="header-mb__centerLogo">
+                        <svg width="101" height="32" viewBox="0 0 101 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M64.2797 25.9578H59.2417V3.62207H64.2797V25.9578Z" fill="currentColor"/>
+                            <path d="M82.1148 25.9418H74.024C71.6521 25.9418 69.9337 25.4536 68.8669 24.4763C67.77 23.4999 67.2225 21.9296 67.2225 19.7672V9.37695H72.0384V19.4233C72.0384 20.3805 72.1865 20.9937 72.4829 21.262C72.739 21.5513 73.3575 21.6967 74.3353 21.6967H77.2688V9.37695H82.1148V25.9418Z" fill="currentColor"/>
+                            <path d="M100.705 20.5898C100.705 22.1449 100.27 23.4208 99.4009 24.4173C98.5311 25.4338 97.4152 25.9423 96.0521 25.9423H85.115L85.0999 21.906H94.1103C94.7419 21.906 95.2314 21.7809 95.5767 21.5318C95.8248 21.3724 95.9479 21.098 95.9479 20.7097C95.9479 20.3002 95.8248 20.0068 95.5767 19.8273C95.3105 19.6578 94.822 19.5731 94.1103 19.5731H90.5685C88.3846 19.5731 86.8883 19.212 86.0787 18.4889C85.2681 17.7668 84.8627 16.5081 84.8627 14.7138C84.8627 12.851 85.3472 11.4995 86.3159 10.6624C87.2247 9.8152 88.6808 9.3916 90.6876 9.3916H99.8902V13.4279H92.2728C91.136 13.4279 90.4304 13.5177 90.1542 13.6982C89.9459 13.797 89.8419 14.0512 89.8419 14.4596C89.8419 14.8288 89.9309 15.0981 90.1091 15.2675C90.3954 15.447 90.8208 15.5368 91.3841 15.5368H95.0882C96.8867 15.5368 98.2599 15.9755 99.2077 16.852C100.205 17.6891 100.705 18.9357 100.705 20.5898Z" fill="currentColor"/>
+                            <path d="M20.5792 25.8885H11.5766C9.66904 25.8885 8.16679 25.7464 7.06688 25.4619C5.94494 25.1887 4.86205 24.6782 3.81918 23.9339C2.54111 22.9919 1.58632 21.8109 0.958797 20.3899C0.319266 18.9577 0 17.2573 0 15.2875C0 11.4348 0.952793 8.57751 2.86037 6.71468C4.74495 4.86193 7.6944 3.93506 11.7117 3.93506H20.5792V7.77063H11.8118C10.1404 7.77063 8.8894 8.12364 8.05969 8.82864C7.207 9.54572 6.18614 11.3672 6.05103 12.7187L20.5792 12.7489V16.8498H6.10608C6.10608 17.585 6.46639 18.8377 6.67955 19.4065C6.8587 19.9652 7.33009 20.4162 7.72343 20.759C8.54211 21.5044 9.90424 21.8766 11.8118 21.8766H20.5792V25.8885Z" fill="currentColor"/>
+                            <path d="M21.4852 9.53906H26.8226L30.2005 14.3297L40.9184 0H46.1727L30.4096 21.3483L21.4852 9.53906Z" fill="currentColor"/>
+                            <path d="M27.4559 18.1123L21.6182 25.8874H26.9976L30.0411 21.7683L27.4559 18.1123Z" fill="currentColor"/>
+                            <path d="M33.3149 18.1123L39.1527 25.8874H33.7733L30.7297 21.7683L33.3149 18.1123Z" fill="currentColor"/>
+                            <path d="M40.5322 9.52832H49.1954V12.901H44.7858V22.6084H48.9773C48.9773 22.6084 52.5424 22.0728 52.5733 17.5656H57.0772C57.0772 17.5656 57.7966 24.5309 50.9159 25.9801H44.8479V32.0002H40.5322V9.52832Z" fill="currentColor"/>
+                            <path d="M58 11.025H55.2637V8.26758H52.8868V11.025H50.1497V13.4203H52.8868V16.1778H55.2637V13.4203H58V11.025Z" fill="currentColor"/>
+                            </svg>
+                    </div>
                 </a>
             </div>
             <!-- end center -->
@@ -205,6 +166,74 @@
             <!-- end right -->
         </div>
         <!-- end mb -->
+        <!-- menu mb -->
+        <div class="sub-menu js__subMenu">
+            <div
+                class="sub-menu__heading d-2xl-flex items-center justify-between"
+            >
+                <h3 class="text-white fs-32">Menu</h3>
+                <div
+                    class="sub-menu__headingClose text-white flex-0 p-10 js__closeSubMenu"
+                >
+                    <!-- <img src="./images/icon/close.svg" alt="" /> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><path opacity="1" fill="currentColor" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                </div>
+            </div>
+            <!-- list -->
+            <ul class="sub-menu__list js__activeContainer">
+                <li class="sub-menu__item">
+                    <a
+                        href="#el-2"
+                        class="navbar-link active js__activeElement"
+                        >Với phóng viên</a
+                    >
+                </li>
+                <li class="sub-menu__item">
+                    <a
+                        href="#el-3"
+                        class="navbar-link js__activeElement"
+                        >Người xuất bản</a
+                    >
+                </li>
+                <li class="sub-menu__item">
+                    <a
+                        href="#el-4"
+                        class="navbar-link js__activeElement"
+                        >Quản trị viên</a
+                    >
+                </li>
+                <li class="sub-menu__item">
+                    <a
+                        href="#el-5"
+                        class="navbar-link js__activeElement"
+                        >SEO</a
+                    >
+                </li>
+                <li class="sub-menu__item">
+                    <a
+                        href="#el-6"
+                        class="navbar-link js__activeElement"
+                        >Với độc giả</a
+                    >
+                </li>
+                <li class="sub-menu__item">
+                    <a
+                        href="#el-7"
+                        class="navbar-link js__activeElement"
+                        >Bảo mật</a
+                    >
+                </li>
+                <li class="sub-menu__item">
+                    <a
+                        href="#el-8"
+                        class="navbar-link js__activeElement"
+                        >Khách hàng</a
+                    >
+                </li>
+            </ul>
+            <!-- end list -->
+        </div>
+        <!-- end menu mb -->
         <!-- main -->
         <main id="main" class="main">
             <div class="pt-58"></div>
